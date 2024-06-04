@@ -61,31 +61,37 @@
         "brand_kBm6mf": {
           "type": "brand",
           "settings": {
+            "brand_logo": "shopify:\/\/shop_images\/nextmove-logo.webp"
           }
         },
         "brand_WjCFjV": {
           "type": "brand",
           "settings": {
+            "brand_logo": "shopify:\/\/shop_images\/waveless-logo.webp"
           }
         },
         "brand_KcHRnj": {
           "type": "brand",
           "settings": {
+            "brand_logo": "shopify:\/\/shop_images\/snowflake-logo.webp"
           }
         },
         "brand_jnaF3m": {
           "type": "brand",
           "settings": {
+            "brand_logo": "shopify:\/\/shop_images\/sitemark-logo.webp"
           }
         },
         "brand_yCgmkA": {
           "type": "brand",
           "settings": {
+            "brand_logo": "shopify:\/\/shop_images\/luminous-logo.webp"
           }
         },
         "brand_GtQz66": {
           "type": "brand",
           "settings": {
+            "brand_logo": "shopify:\/\/shop_images\/vision-logo.webp"
           }
         }
       },
