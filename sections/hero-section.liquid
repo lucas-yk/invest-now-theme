@@ -1,0 +1,172 @@
+{%- style -%}
+  #hero-section--{{ section.id }} {
+    background-image: url('{{ section.settings.bg_image |  image_url }}');
+  }
+{%- endstyle -%}
+<div id="hero-section--{{ section.id }}" class="section section-hero"></div>
+{%- schema -%}
+{
+  "name": "Hero Section",
+  "class": "section section-hero",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "header",
+      "content": "Hero Section"
+    },
+    {
+      "type": "image_picker",
+      "id": "bg_image",
+      "label": "Background Image"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "title",
+      "name": "Title",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "checkbox",
+          "id": "is_gradient",
+          "label": "Enable Gradient",
+          "default": false
+        },
+        {
+          "type": "color",
+          "id": "title_color",
+          "label": "Title Color"
+        },
+        {
+          "type": "range",
+          "id": "title_font_size",
+          "label": "Title Font Size",
+          "min": 32,
+          "max": 90,
+          "unit": "px",
+          "step": 1,
+          "default": 70
+        }
+      ]
+    },
+    {
+      "type": "sub_title",
+      "name": "Sub Title",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "sub_title",
+          "label": "Sub Title"
+        },
+        {
+          "type": "checkbox",
+          "id": "is_gradient",
+          "label": "Enable Gradient",
+          "default": false
+        },
+        {
+          "type": "color",
+          "id": "sub_title_color",
+          "label": "Sub Title Color"
+        },
+        {
+          "type": "range",
+          "id": "sub_title_font_size",
+          "label": "Sub Title Font Size",
+          "min": 14,
+          "max": 50,
+          "unit": "px",
+          "step": 1,
+          "default": 20
+        }
+      ]
+    },
+    {
+      "type": "button_1",
+      "name": "Button 1",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "button_text",
+          "label": "Button Text"
+        },
+        {
+          "type": "url",
+          "id": "button_url",
+          "label": "Button URL"
+        },
+        {
+          "type": "color",
+          "id": "text_color",
+          "label": "Button Text Color",
+          "default": "#FFFFFF"
+        },
+        {
+          "type": "color",
+          "id": "ellipse_color",
+          "label": "Ellipse Icon Color",
+          "default": "#FDEA43"
+        }
+      ]
+    },
+    {
+      "type": "review",
+      "name": "Review",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "button_text",
+          "label": "Button Text"
+        },
+        {
+          "type": "url",
+          "id": "button_url",
+          "label": "Button URL"
+        },
+        {
+          "type": "color",
+          "id": "text_color",
+          "label": "Button Text Color",
+          "default": "#FFFFFF"
+        },
+        {
+          "type": "color",
+          "id": "bg_color",
+          "label": "Button Background Color",
+          "default": "##48B065"
+        },
+        {
+          "type": "range",
+          "id": "review_rating",
+          "label": "Review Rating",
+          "min": 1,
+          "max": 5,
+          "step": 0.5,
+          "default": 5
+        },
+        {
+          "type": "color",
+          "id": "star_color",
+          "label": "Star Color",
+          "default": "#FDDD33"
+        },
+        {
+          "type": "textarea",
+          "id": "description",
+          "label": "Description"
+        }
+      ]
+    }
+  ]
+}
+{%- endschema -%}
