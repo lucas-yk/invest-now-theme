@@ -116,8 +116,8 @@
         "title_HdyWTN": {
           "type": "title",
           "settings": {
-            "title": "",
-            "is_gradient": false,
+            "title": "The complete platform to power your investments",
+            "is_gradient": true,
             "title_color": "",
             "title_font_size": 48
           }
