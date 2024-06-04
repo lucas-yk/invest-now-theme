@@ -39,7 +39,8 @@
             "bg_color": "#48b065",
             "review_rating": 5,
             "star_color": "#fddd33",
-            "description": "From 3,123+ Users (4.8 of 5)"
+            "description": "From 3,123+ Users (4.8 of 5)",
+            "description_color": "#FFF"
           }
         }
       },
@@ -52,6 +53,55 @@
       "settings": {
         "bg_image": "shopify:\/\/shop_images\/hero-bg-with-crypto-price-chart.webp",
         "padding_side": 15
+      }
+    },
+    "brand_section_BFWjVA": {
+      "type": "brand-section",
+      "blocks": {
+        "brand_kBm6mf": {
+          "type": "brand",
+          "settings": {
+          }
+        },
+        "brand_WjCFjV": {
+          "type": "brand",
+          "settings": {
+          }
+        },
+        "brand_KcHRnj": {
+          "type": "brand",
+          "settings": {
+          }
+        },
+        "brand_jnaF3m": {
+          "type": "brand",
+          "settings": {
+          }
+        },
+        "brand_yCgmkA": {
+          "type": "brand",
+          "settings": {
+          }
+        },
+        "brand_GtQz66": {
+          "type": "brand",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "brand_kBm6mf",
+        "brand_WjCFjV",
+        "brand_KcHRnj",
+        "brand_jnaF3m",
+        "brand_yCgmkA",
+        "brand_GtQz66"
+      ],
+      "settings": {
+        "title": "More than <strong>+88,500<\/strong> successful InvestNow users worldwide",
+        "block_type": "normal",
+        "gap": 65,
+        "has_border": true
       }
     },
     "image_banner": {
@@ -268,6 +318,7 @@
   },
   "order": [
     "hero_section_6qrdGX",
+    "brand_section_BFWjVA",
     "image_banner",
     "rich_text",
     "featured_collection",
