@@ -40,7 +40,7 @@
             "review_rating": 5,
             "star_color": "#fddd33",
             "description": "From 3,123+ Users (4.8 of 5)",
-            "description_color": "#FFF"
+            "description_color": "#ffffff"
           }
         }
       },
@@ -108,6 +108,120 @@
         "block_type": "slide",
         "gap": 65,
         "has_border": true
+      }
+    },
+    "feature_section_HmV3PJ": {
+      "type": "feature-section",
+      "blocks": {
+        "title_HdyWTN": {
+          "type": "title",
+          "settings": {
+            "title": "",
+            "is_gradient": false,
+            "title_color": "",
+            "title_font_size": 48
+          }
+        },
+        "tab_bwYKQ3": {
+          "type": "tab",
+          "settings": {
+            "tab_id": "",
+            "tab_text": ""
+          }
+        },
+        "tab_mVgwMx": {
+          "type": "tab",
+          "settings": {
+            "tab_id": "",
+            "tab_text": ""
+          }
+        },
+        "tab_fUGXkM": {
+          "type": "tab",
+          "settings": {
+            "tab_id": "",
+            "tab_text": ""
+          }
+        },
+        "tab_t97TwH": {
+          "type": "tab",
+          "settings": {
+            "tab_id": "",
+            "tab_text": ""
+          }
+        },
+        "tab_ngVY8x": {
+          "type": "tab",
+          "settings": {
+            "tab_id": "",
+            "tab_text": ""
+          }
+        },
+        "tab_TpEhFY": {
+          "type": "tab",
+          "settings": {
+            "tab_id": "",
+            "tab_text": ""
+          }
+        },
+        "tab_KfryjF": {
+          "type": "tab",
+          "settings": {
+            "tab_id": "",
+            "tab_text": ""
+          }
+        },
+        "feature_block_aFeP43": {
+          "type": "feature_block",
+          "settings": {
+            "banner_image": "shopify:\/\/shop_images\/cryptocurrency-mobile-app.webp",
+            "icon": "chart",
+            "sub_title": "",
+            "is_gradient": false,
+            "sub_title_color": "",
+            "sub_title_font_size": 32,
+            "description": "",
+            "description_font_size": 16,
+            "button_text": "",
+            "button_url": "",
+            "text_color": "#FFFFFF",
+            "bg_color": "#48B065"
+          }
+        },
+        "featuere_Czwf7p": {
+          "type": "featuere",
+          "settings": {
+            "description": ""
+          }
+        },
+        "featuere_XKMMUn": {
+          "type": "featuere",
+          "settings": {
+            "description": ""
+          }
+        },
+        "featuere_fEeRXn": {
+          "type": "featuere",
+          "settings": {
+            "description": ""
+          }
+        }
+      },
+      "block_order": [
+        "title_HdyWTN",
+        "tab_bwYKQ3",
+        "tab_mVgwMx",
+        "tab_fUGXkM",
+        "tab_t97TwH",
+        "tab_ngVY8x",
+        "tab_TpEhFY",
+        "tab_KfryjF",
+        "feature_block_aFeP43",
+        "featuere_Czwf7p",
+        "featuere_XKMMUn",
+        "featuere_fEeRXn"
+      ],
+      "settings": {
       }
     },
     "image_banner": {
@@ -325,6 +439,7 @@
   "order": [
     "hero_section_6qrdGX",
     "brand_section_BFWjVA",
+    "feature_section_HmV3PJ",
     "image_banner",
     "rich_text",
     "featured_collection",
