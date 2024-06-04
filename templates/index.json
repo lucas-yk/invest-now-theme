@@ -141,11 +141,137 @@
             "bg_color": "#48B065",
             "features": "Hundreds of practical and useful investment examples|A highly intelligent robot has been prepared|Smart, extensive and scalable investment system"
           }
+        },
+        "tab_M8hwU8": {
+          "type": "tab",
+          "settings": {
+            "tab_id": "passive-income",
+            "tab_text": "Passive Income",
+            "banner_image": "shopify:\/\/shop_images\/cryptocurrency-mobile-app.webp",
+            "icon": "chart",
+            "sub_title": "Investments can grow your wealth over time",
+            "is_gradient": true,
+            "sub_title_color": "",
+            "sub_title_font_size": 32,
+            "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute irure dolor in reprehenderit.",
+            "description_font_size": 16,
+            "button_text": "Check Risks Automatically",
+            "button_url": "shopify:\/\/collections",
+            "text_color": "#FFFFFF",
+            "bg_color": "#48B065",
+            "features": "Hundreds of practical and useful investment examples|A highly intelligent robot has been prepared|Smart, extensive and scalable investment system"
+          }
+        },
+        "tab_UPiiGX": {
+          "type": "tab",
+          "settings": {
+            "tab_id": "wealth-accumulation",
+            "tab_text": "Wealth Accumulation",
+            "banner_image": "shopify:\/\/shop_images\/cryptocurrency-mobile-app.webp",
+            "icon": "chart",
+            "sub_title": "Investments can grow your wealth over time",
+            "is_gradient": true,
+            "sub_title_color": "",
+            "sub_title_font_size": 32,
+            "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute irure dolor in reprehenderit.",
+            "description_font_size": 16,
+            "button_text": "Check Risks Automatically",
+            "button_url": "shopify:\/\/collections",
+            "text_color": "#FFFFFF",
+            "bg_color": "#48B065",
+            "features": "Hundreds of practical and useful investment examples|A highly intelligent robot has been prepared|Smart, extensive and scalable investment system"
+          }
+        },
+        "tab_hhhUKi": {
+          "type": "tab",
+          "settings": {
+            "tab_id": "wealth-accumulation",
+            "tab_text": "Wealth Accumulation",
+            "banner_image": "shopify:\/\/shop_images\/cryptocurrency-mobile-app.webp",
+            "icon": "chart",
+            "sub_title": "Investments can grow your wealth over time",
+            "is_gradient": true,
+            "sub_title_color": "",
+            "sub_title_font_size": 32,
+            "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute irure dolor in reprehenderit.",
+            "description_font_size": 16,
+            "button_text": "Check Risks Automatically",
+            "button_url": "shopify:\/\/collections",
+            "text_color": "#FFFFFF",
+            "bg_color": "#48B065",
+            "features": "Hundreds of practical and useful investment examples|A highly intelligent robot has been prepared|Smart, extensive and scalable investment system"
+          }
+        },
+        "tab_kNA77a": {
+          "type": "tab",
+          "settings": {
+            "tab_id": "wealth-accumulation",
+            "tab_text": "Wealth Accumulation",
+            "banner_image": "shopify:\/\/shop_images\/cryptocurrency-mobile-app.webp",
+            "icon": "chart",
+            "sub_title": "Investments can grow your wealth over time",
+            "is_gradient": true,
+            "sub_title_color": "",
+            "sub_title_font_size": 32,
+            "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute irure dolor in reprehenderit.",
+            "description_font_size": 16,
+            "button_text": "Check Risks Automatically",
+            "button_url": "shopify:\/\/collections",
+            "text_color": "#FFFFFF",
+            "bg_color": "#48B065",
+            "features": "Hundreds of practical and useful investment examples|A highly intelligent robot has been prepared|Smart, extensive and scalable investment system"
+          }
+        },
+        "tab_GJi8yH": {
+          "type": "tab",
+          "settings": {
+            "tab_id": "wealth-accumulation",
+            "tab_text": "Wealth Accumulation",
+            "banner_image": "shopify:\/\/shop_images\/cryptocurrency-mobile-app.webp",
+            "icon": "chart",
+            "sub_title": "Investments can grow your wealth over time",
+            "is_gradient": true,
+            "sub_title_color": "",
+            "sub_title_font_size": 32,
+            "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute irure dolor in reprehenderit.",
+            "description_font_size": 16,
+            "button_text": "Check Risks Automatically",
+            "button_url": "shopify:\/\/collections",
+            "text_color": "#FFFFFF",
+            "bg_color": "#48B065",
+            "features": "Hundreds of practical and useful investment examples|A highly intelligent robot has been prepared|Smart, extensive and scalable investment system"
+          }
+        },
+        "tab_mYpq4D": {
+          "type": "tab",
+          "settings": {
+            "tab_id": "wealth-accumulation",
+            "tab_text": "Wealth Accumulation",
+            "banner_image": "shopify:\/\/shop_images\/cryptocurrency-mobile-app.webp",
+            "icon": "chart",
+            "sub_title": "Investments can grow your wealth over time",
+            "is_gradient": true,
+            "sub_title_color": "",
+            "sub_title_font_size": 32,
+            "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute irure dolor in reprehenderit.",
+            "description_font_size": 16,
+            "button_text": "Check Risks Automatically",
+            "button_url": "shopify:\/\/collections",
+            "text_color": "#FFFFFF",
+            "bg_color": "#48B065",
+            "features": "Hundreds of practical and useful investment examples|A highly intelligent robot has been prepared|Smart, extensive and scalable investment system"
+          }
         }
       },
       "block_order": [
         "title_HdyWTN",
-        "tab_bwYKQ3"
+        "tab_bwYKQ3",
+        "tab_M8hwU8",
+        "tab_UPiiGX",
+        "tab_hhhUKi",
+        "tab_kNA77a",
+        "tab_GJi8yH",
+        "tab_mYpq4D"
       ],
       "settings": {
       }
