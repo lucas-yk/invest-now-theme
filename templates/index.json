@@ -8,8 +8,8 @@
           "settings": {
             "button_text": "Trusted Investment Platform",
             "button_url": "shopify:\/\/collections\/all",
-            "text_color": "#FFFFFF",
-            "ellipse_color": "#FDEA43"
+            "text_color": "#ffffff",
+            "ellipse_color": "#fdea43"
           }
         },
         "title_wETg3M": {
@@ -35,10 +35,10 @@
           "settings": {
             "button_text": "Getting Started",
             "button_url": "shopify:\/\/collections\/all",
-            "text_color": "#FFFFFF",
-            "bg_color": "#48B065",
+            "text_color": "#ffffff",
+            "bg_color": "#48b065",
             "review_rating": 5,
-            "star_color": "#FDDD33",
+            "star_color": "#fddd33",
             "description": "From 3,123+ Users (4.8 of 5)"
           }
         }
@@ -50,7 +50,7 @@
         "review_w3YEc3"
       ],
       "settings": {
-        "bg_image": "shopify:\/\/shop_images\/hero-bg.webp"
+        "bg_image": "shopify:\/\/shop_images\/hero-bg-with-crypto-price-chart.webp"
       }
     },
     "image_banner": {
