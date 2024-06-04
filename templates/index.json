@@ -105,7 +105,7 @@
       ],
       "settings": {
         "title": "More than <strong>+88,500<\/strong> successful InvestNow users worldwide",
-        "block_type": "normal",
+        "block_type": "slide",
         "gap": 65,
         "has_border": true
       }
