@@ -3,13 +3,13 @@
     "hero_section_6qrdGX": {
       "type": "hero-section",
       "blocks": {
-        "button_1_dppTH6": {
-          "type": "button_1",
+        "button_WXPwat": {
+          "type": "button",
           "settings": {
-            "button_text": "Trusted Investment Platform",
-            "button_url": "shopify:\/\/collections\/all",
-            "text_color": "#ffffff",
-            "ellipse_color": "#fdea43"
+            "button_text": "",
+            "button_url": "",
+            "text_color": "#FFFFFF",
+            "ellipse_color": "#FDEA43"
           }
         },
         "title_wETg3M": {
@@ -44,13 +44,14 @@
         }
       },
       "block_order": [
-        "button_1_dppTH6",
+        "button_WXPwat",
         "title_wETg3M",
         "sub_title_DxHCAw",
         "review_w3YEc3"
       ],
       "settings": {
-        "bg_image": "shopify:\/\/shop_images\/hero-bg-with-crypto-price-chart.webp"
+        "bg_image": "shopify:\/\/shop_images\/hero-bg-with-crypto-price-chart.webp",
+        "padding_side": 15
       }
     },
     "image_banner": {
