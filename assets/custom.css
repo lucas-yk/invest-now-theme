@@ -1,0 +1,21 @@
+.flex {
+  display: flex;
+}
+.flex-column {
+  flex-direction: column;
+}
+.flex-reverse {
+  flex-direction: row-reverse;
+}
+.flex-col-reverse {
+  flex-direction: column-reverse;
+}
+
+/* ==========================================================
+// Hero Section
+// =========================================================*/
+.hero__image {
+  width: 100%;
+}
+
+/*# sourceMappingURL=custom.css.map */

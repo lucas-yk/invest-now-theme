@@ -1,9 +1,36 @@
 {%- style -%}
   #hero-section--{{ section.id }} {
-    background-image: url('{{ section.settings.bg_image |  image_url }}');
+    /* background-image: url('{{ section.settings.bg_image |  image_url }}');
+    background-size: cover;
+    width: calc(100vw - 30px); */
+    /* height: */
+    padding-left: {{ section.settings.padding_side }}px;
+    padding-right: {{ section.settings.padding_side }}px;
   }
 {%- endstyle -%}
-<div id="hero-section--{{ section.id }}" class="section section-hero"></div>
+<div id="hero-section--{{ section.id }}" class="section section-hero">
+  {{
+    section.settings.bg_image
+    | image_url: width: '1500'
+    | image_tag: alt: section.settings.bg_image.alt, class: 'hero__image', height: null, width: null, loading: 'lazy'
+  }}
+  <div class="hero__content">
+    {%- for block in section.blocks -%}
+      {%- case block.type -%}
+        {%- when 'button' -%}
+          <div class="hero__button flex">
+            <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="8" cy="8.5" r="8" fill="{{ block.settings.ellipse_color }}" fill-opacity="0.2"/>
+              <circle cx="8" cy="8.5" r="5" fill="{{ block.settings.ellipse_color }}" fill-opacity="0.5"/>
+              <circle cx="8" cy="8.5" r="3" fill="{{ block.settings.ellipse_color }}"/>
+            </svg>
+          </div>
+      {%- endcase -%}
+    {%- endfor -%}
+  </div>
+
+  {% comment %} <img class="hero__image" src="{{ section.settings.bg_image |  image_url }}" style="width: 100%;"> {% endcomment %}
+</div>
 {%- schema -%}
 {
   "name": "Hero Section",
@@ -20,6 +47,16 @@
       "type": "image_picker",
       "id": "bg_image",
       "label": "Background Image"
+    },
+    {
+      "type": "range",
+      "id": "padding_side",
+      "label": "Padding Side",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "default": 15
     }
   ],
   "blocks": [
@@ -90,8 +127,8 @@
       ]
     },
     {
-      "type": "button_1",
-      "name": "Button 1",
+      "type": "button",
+      "name": "Button",
       "limit": 1,
       "settings": [
         {
