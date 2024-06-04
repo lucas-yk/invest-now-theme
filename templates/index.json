@@ -126,54 +126,7 @@
           "type": "tab",
           "settings": {
             "tab_id": "wealth-accumulation",
-            "tab_text": "Wealth Accumulation"
-          }
-        },
-        "tab_mVgwMx": {
-          "type": "tab",
-          "settings": {
-            "tab_id": "passive-income",
-            "tab_text": "Passive Income"
-          }
-        },
-        "tab_fUGXkM": {
-          "type": "tab",
-          "settings": {
-            "tab_id": "for-inflation-hedge",
-            "tab_text": "For Inflation Hedge"
-          }
-        },
-        "tab_t97TwH": {
-          "type": "tab",
-          "settings": {
-            "tab_id": "liquidity",
-            "tab_text": "Liquidity"
-          }
-        },
-        "tab_ngVY8x": {
-          "type": "tab",
-          "settings": {
-            "tab_id": "financial-security",
-            "tab_text": "Financial Security"
-          }
-        },
-        "tab_TpEhFY": {
-          "type": "tab",
-          "settings": {
-            "tab_id": "retirement-planning",
-            "tab_text": "Retirement Planning"
-          }
-        },
-        "tab_KfryjF": {
-          "type": "tab",
-          "settings": {
-            "tab_id": "tax-benefits",
-            "tab_text": "Tax Benefits"
-          }
-        },
-        "feature_block_aFeP43": {
-          "type": "feature_block",
-          "settings": {
+            "tab_text": "Wealth Accumulation",
             "banner_image": "shopify:\/\/shop_images\/cryptocurrency-mobile-app.webp",
             "icon": "chart",
             "sub_title": "Investments can grow your wealth over time",
@@ -185,41 +138,14 @@
             "button_text": "Check Risks Automatically",
             "button_url": "shopify:\/\/collections",
             "text_color": "#FFFFFF",
-            "bg_color": "#48B065"
-          }
-        },
-        "featuere_Czwf7p": {
-          "type": "featuere",
-          "settings": {
-            "description": "Hundreds of practical and useful investment examples"
-          }
-        },
-        "featuere_XKMMUn": {
-          "type": "featuere",
-          "settings": {
-            "description": "A highly intelligent robot has been prepared"
-          }
-        },
-        "featuere_fEeRXn": {
-          "type": "featuere",
-          "settings": {
-            "description": "Smart, extensive and scalable investment system"
+            "bg_color": "#48B065",
+            "features": "Hundreds of practical and useful investment examples|A highly intelligent robot has been prepared|Smart, extensive and scalable investment system"
           }
         }
       },
       "block_order": [
         "title_HdyWTN",
-        "tab_bwYKQ3",
-        "tab_mVgwMx",
-        "tab_fUGXkM",
-        "tab_t97TwH",
-        "tab_ngVY8x",
-        "tab_TpEhFY",
-        "tab_KfryjF",
-        "feature_block_aFeP43",
-        "featuere_Czwf7p",
-        "featuere_XKMMUn",
-        "featuere_fEeRXn"
+        "tab_bwYKQ3"
       ],
       "settings": {
       }
