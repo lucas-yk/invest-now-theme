@@ -6,8 +6,8 @@
         "button_1_dppTH6": {
           "type": "button_1",
           "settings": {
-            "button_text": "",
-            "button_url": "",
+            "button_text": "Trusted Investment Platform",
+            "button_url": "shopify:\/\/collections\/all",
             "text_color": "#FFFFFF",
             "ellipse_color": "#FDEA43"
           }
