@@ -2,6 +2,53 @@
   "sections": {
     "hero_section_6qrdGX": {
       "type": "hero-section",
+      "blocks": {
+        "button_1_dppTH6": {
+          "type": "button_1",
+          "settings": {
+            "button_text": "",
+            "button_url": "",
+            "text_color": "#FFFFFF",
+            "ellipse_color": "#FDEA43"
+          }
+        },
+        "title_wETg3M": {
+          "type": "title",
+          "settings": {
+            "title": "Empower Your Finances with Strategic Investments",
+            "is_gradient": true,
+            "title_color": "",
+            "title_font_size": 70
+          }
+        },
+        "sub_title_DxHCAw": {
+          "type": "sub_title",
+          "settings": {
+            "sub_title": "",
+            "is_gradient": false,
+            "sub_title_color": "",
+            "sub_title_font_size": 20
+          }
+        },
+        "review_w3YEc3": {
+          "type": "review",
+          "settings": {
+            "button_text": "",
+            "button_url": "",
+            "text_color": "#FFFFFF",
+            "bg_color": "#48B065",
+            "review_rating": 5,
+            "star_color": "#FDDD33",
+            "description": ""
+          }
+        }
+      },
+      "block_order": [
+        "button_1_dppTH6",
+        "title_wETg3M",
+        "sub_title_DxHCAw",
+        "review_w3YEc3"
+      ],
       "settings": {
         "bg_image": "shopify:\/\/shop_images\/hero-bg.webp"
       }
