@@ -8,8 +8,8 @@
           "settings": {
             "button_text": "Trusted Investment Platform",
             "button_url": "shopify:\/\/collections\/all",
-            "text_color": "#FFFFFF",
-            "ellipse_color": "#FDEA43"
+            "text_color": "#ffffff",
+            "ellipse_color": "#fdea43"
           }
         },
         "title_wETg3M": {
@@ -21,13 +21,13 @@
             "title_font_size": 70
           }
         },
-        "sub_title_DxHCAw": {
-          "type": "sub_title",
+        "description_crNn4W": {
+          "type": "description",
           "settings": {
-            "sub_title": "",
+            "description": "Maximize your business and investment profits with expert guidance and innovative solutions.",
             "is_gradient": false,
-            "sub_title_color": "",
-            "sub_title_font_size": 20
+            "text_color": "#ffffff",
+            "text_font_size": 20
           }
         },
         "review_w3YEc3": {
@@ -46,7 +46,7 @@
       "block_order": [
         "button_WXPwat",
         "title_wETg3M",
-        "sub_title_DxHCAw",
+        "description_crNn4W",
         "review_w3YEc3"
       ],
       "settings": {
