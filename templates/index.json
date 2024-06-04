@@ -33,13 +33,13 @@
         "review_w3YEc3": {
           "type": "review",
           "settings": {
-            "button_text": "",
-            "button_url": "",
+            "button_text": "Getting Started",
+            "button_url": "shopify:\/\/collections\/all",
             "text_color": "#FFFFFF",
             "bg_color": "#48B065",
             "review_rating": 5,
             "star_color": "#FDDD33",
-            "description": ""
+            "description": "From 3,123+ Users (4.8 of 5)"
           }
         }
       },
