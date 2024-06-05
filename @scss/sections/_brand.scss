@@ -42,9 +42,36 @@
             height: 1px;
             position: absolute;
             bottom: -50px;
-            // left: 10px;
             background-color: #071E1226;
         }
     }
+
+    &-swiper {
+        padding-left: 320px;
+        margin-left: calc((100vw - 1200px) / 2);
+        padding-bottom: 50px;
+
+
+        .swiper-slide {
+            display: flex;
+
+            img {
+                width: 150px;
+                height: 32px;
+            }
+        }
+
+        &::before {
+            content: " ";
+            width: 1300px;
+            height: 1px;
+            position: absolute;
+            left: -50px;
+            bottom: 0;
+            background-color: #071E1226;
+        }
+    }
+
+    
     
 }

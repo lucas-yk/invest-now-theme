@@ -26,7 +26,7 @@
         <div class="swiper-wrapper">
           {%- for block in blocks -%}
             <div class="swiper-slide">
-              {%- if block.settings.brand_log != blank -%}
+              {%- if block.settings.brand_logo != blank -%}
                 {{
                   block.settings.brand_logo
                   | image_url: width: '150'
@@ -45,6 +45,21 @@
     {%- endif -%}
   </div>
 </div>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    // Your JavaScript code here
+    var swiper = new Swiper('.brand-swiper', {
+      spaceBetween: {{ section.settings.gap }},
+      slidesPerView: 6,
+      centeredSlides: true,
+      loop: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      }
+    });
+  });
+</script>
 {%- schema -%}
 {
   "name": "Brand Section",

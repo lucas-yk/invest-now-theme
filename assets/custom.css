@@ -612,5 +612,26 @@
   bottom: -50px;
   background-color: rgba(7, 30, 18, 0.1490196078);
 }
+.brand-swiper {
+  padding-left: 320px;
+  margin-left: calc((100vw - 1200px) / 2);
+  padding-bottom: 50px;
+}
+.brand-swiper .swiper-slide {
+  display: flex;
+}
+.brand-swiper .swiper-slide img {
+  width: 150px;
+  height: 32px;
+}
+.brand-swiper::before {
+  content: " ";
+  width: 1300px;
+  height: 1px;
+  position: absolute;
+  left: -50px;
+  bottom: 0;
+  background-color: rgba(7, 30, 18, 0.1490196078);
+}
 
 /*# sourceMappingURL=custom.css.map */
