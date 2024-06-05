@@ -14,17 +14,31 @@
     | image_url: width: '1500'
     | image_tag: alt: section.settings.bg_image.alt, class: 'hero__image', height: null, width: null, loading: 'lazy'
   }}
-  <div class="hero__content">
+  <div class="hero__content flex flex-col align-center w-full">
     {%- for block in section.blocks -%}
       {%- case block.type -%}
         {%- when 'button' -%}
-          <div class="hero__button flex">
+          <a
+            href="{{ block.settings.button_url }}"
+            class="hero__button flex flex-center align-center gap-5"
+          >
             <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
               <circle cx="8" cy="8.5" r="8" fill="{{ block.settings.ellipse_color }}" fill-opacity="0.2"/>
               <circle cx="8" cy="8.5" r="5" fill="{{ block.settings.ellipse_color }}" fill-opacity="0.5"/>
               <circle cx="8" cy="8.5" r="3" fill="{{ block.settings.ellipse_color }}"/>
             </svg>
-          </div>
+            <span style="color: {{ block.settings.text_color }};">{{ block.settings.button_text }}</span>
+            {%- render 'icon-arrow-right', color: block.settings.text_color -%}
+          </a>
+        {%- when 'title' -%}
+          <h1
+            class="hero__title heading center {%if block.settings.is_gradient%}text-gradient{%- endif -%}"
+            style="font-size: {{ block.settings.title_font-size }}px;"
+          >
+            {{ block.settings.title }}
+          </h1>
+        {%- when 'sub_title' -%}
+          <div class="hero__description">{{ block.settings.description }}</div>
       {%- endcase -%}
     {%- endfor -%}
   </div>
@@ -94,14 +108,14 @@
       ]
     },
     {
-      "type": "sub_title",
-      "name": "Sub Title",
+      "type": "description",
+      "name": "Description",
       "limit": 1,
       "settings": [
         {
           "type": "text",
-          "id": "sub_title",
-          "label": "Sub Title"
+          "id": "description",
+          "label": "Description"
         },
         {
           "type": "checkbox",
@@ -111,13 +125,13 @@
         },
         {
           "type": "color",
-          "id": "sub_title_color",
-          "label": "Sub Title Color"
+          "id": "text_color",
+          "label": "Text Color"
         },
         {
           "type": "range",
-          "id": "sub_title_font_size",
-          "label": "Sub Title Font Size",
+          "id": "text_font_size",
+          "label": "Decription Font Size",
           "min": 14,
           "max": 50,
           "unit": "px",

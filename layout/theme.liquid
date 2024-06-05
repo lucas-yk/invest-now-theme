@@ -244,6 +244,23 @@
         font-weight: var(--font-body-weight);
       }
 
+      @font-face {
+        font-family: 'Instrument Sans';
+        src: url('InstrumentSans-Regular.woff2') format('woff2'),
+            url('InstrumentSans-Regular.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+      }
+
+      @font-face {
+        font-family: 'Instrument Sans Bold';
+        src: url('{{ 'InstrumentSans-Bold.woff2' }}') format('woff2'),
+            url('InstrumentSans-Bold.ttf') format('truetype');
+        font-weight: bold;
+        font-style: normal;
+      }
+
+
       @media screen and (min-width: 750px) {
         body {
           font-size: 1.6rem;

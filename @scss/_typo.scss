@@ -1,0 +1,15 @@
+.heading {
+    font-family: Instrument Sans, sans-serif;
+}
+
+.text {
+    &-gradient {
+        background: radial-gradient(98.49% 105.92% at 8.9% 17.76%, #FFFFFF 0%, #999999 48.38%, #FFFFFF 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+.center {
+    text-align: center;
+}

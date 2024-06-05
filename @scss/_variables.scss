@@ -1,5 +1,25 @@
-$layouts: (
-    "column": column,
+$flex-directions: (
+    "col": column,
     "reverse": row-reverse,
     "col-reverse": column-reverse
+);
+
+$flex-layouts: (
+    "center": center,
+    "start": flex-start,
+    "end": flex-end,
+    "between": space-between,
+    "around": space-around,
+    "evenly": space-evenly
+);
+
+$flex-aligns: (
+    "normal": normal,
+    "center": center,
+    "stretch": stretch,
+    "flex-start": flex-start,
+    "flex-end": flex-end,
+    "start": start,
+    "end": end,
+    "baseline": baseline
 )

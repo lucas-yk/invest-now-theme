@@ -2,7 +2,37 @@
 // Hero Section
 // =========================================================*/
 .hero {
-    &__image {
-        width: 100%;
-    }
+  &__content {
+    position: absolute;
+    top: 200px;
+  }
+  &__image {
+    width: 100%;
+  }
+
+  &__button {
+    font-family: Instrument Sans, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16.8px;
+    background: radial-gradient(43.32% 110% at 50.2% 147.14%, rgba(72, 176, 101, 0.8) 0%, rgba(26, 65, 37, 0.8) 100%);
+    border: 0.6px solid;
+    border-image-source: radial-gradient(
+      230.08% 395.45% at 44.31% -6.82%,
+      rgba(255, 255, 255, 0.9) 0%,
+      rgba(255, 255, 255, 0) 14.34%,
+      rgba(255, 255, 255, 0.7) 49.73%
+    );
+    border-radius: 8px;
+    padding: 6px 10px 6px 8px;
+    text-decoration: none;
+  }
+
+  &__title {
+    font-size: 70px;
+    font-weight: 500;
+    line-height: 77px;
+    letter-spacing: -0.03em;
+    padding: 0 calc(min(calc((100vw - 900px) / 2), 250px));
+  }
 }

@@ -1,9 +1,36 @@
 .flex {
     display: flex;
     
-    @each $key, $value in $layouts {
+    @each $key, $value in $flex-directions {
         &-#{$key} {
             flex-direction: $value;
         }
     }
+
+    @each $key, $value in $flex-layouts {
+        &-#{$key} {
+            justify-content: $value;
+        }
+    }
 }
+
+@each $key, $value in $flex-aligns {
+    .align-#{$key} {
+        align-items: $value;
+    }
+}
+
+@for $i from 1 through 100 {
+    .gap-#{$i} {
+      gap: #{$i}px;
+    }
+}
+
+.mx-auto {
+    margin: 0 auto;
+}
+
+.w-full {
+    width: 100%;
+}
+
