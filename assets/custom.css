@@ -507,6 +507,11 @@
   color: #fff;
 }
 
+.container {
+  width: 1210px;
+  left: calc((100vw - 1210px) / 2);
+}
+
 .btn {
   text-decoration: none;
 }

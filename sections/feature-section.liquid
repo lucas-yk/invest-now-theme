@@ -1,0 +1,169 @@
+<div class="section section-feature">
+  <div class="container"></div>
+</div>
+{%- schema -%}
+{
+  "name": "Feature Section",
+  "class": "section section-feature",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "title",
+      "name": "Title",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "checkbox",
+          "id": "is_gradient",
+          "label": "Enable Gradient",
+          "default": false
+        },
+        {
+          "type": "color",
+          "id": "title_color",
+          "label": "Title Color"
+        },
+        {
+          "type": "range",
+          "id": "title_font_size",
+          "label": "Title Font Size",
+          "min": 32,
+          "max": 90,
+          "unit": "px",
+          "step": 1,
+          "default": 48
+        }
+      ]
+    },
+    {
+      "type": "tab",
+      "name": "Tab",
+      "settings": [
+        {
+          "type": "text",
+          "id": "tab_id",
+          "label": "Tab ID"
+        },
+        {
+          "type": "text",
+          "id": "tab_text",
+          "label": "Tab Text"
+        }
+      ]
+    },
+    {
+      "type": "feature_block",
+      "name": "Feature Block",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "banner_image",
+          "label": "Banner Image"
+        },
+        {
+          "type": "select",
+          "label": "Icon",
+          "id": "icon",
+          "options": [
+            {
+              "value": "chart",
+              "label": "Chart"
+            }
+          ],
+          "default": "chart"
+        },
+        {
+          "type": "text",
+          "id": "sub_title",
+          "label": "Sub Title"
+        },
+        {
+          "type": "checkbox",
+          "id": "is_gradient",
+          "label": "Enable Gradient",
+          "default": false
+        },
+        {
+          "type": "color",
+          "id": "sub_title_color",
+          "label": "Sub Title Color"
+        },
+        {
+          "type": "range",
+          "id": "sub_title_font_size",
+          "label": "Title Font Size",
+          "min": 16,
+          "max": 50,
+          "unit": "px",
+          "step": 1,
+          "default": 32
+        },
+        {
+          "type": "text",
+          "id": "description",
+          "label": "Description"
+        },
+        {
+          "type": "checkbox",
+          "id": "is_gradient",
+          "label": "Enable Gradient",
+          "default": false
+        },
+        {
+          "type": "range",
+          "id": "sub_title_font_size",
+          "label": "Title Font Size",
+          "min": 12,
+          "max": 50,
+          "unit": "px",
+          "step": 1,
+          "default": 16
+        },
+        {
+          "type": "text",
+          "id": "button_text",
+          "label": "Button Text"
+        },
+        {
+          "type": "url",
+          "id": "button_url",
+          "label": "Button URL"
+        },
+        {
+          "type": "color",
+          "id": "text_color",
+          "label": "Button Text Color",
+          "default": "#FFFFFF"
+        },
+        {
+          "type": "color",
+          "id": "bg_color",
+          "label": "Button Background Color",
+          "default": "#48B065"
+        }
+      ]
+    },
+    {
+      "type": "featuere",
+      "name": "Feature",
+      "settings": [
+        {
+          "type": "text",
+          "id": "description",
+          "label": "Description"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Feature Section"
+    }
+  ]
+}
+{%- endschema -%}
