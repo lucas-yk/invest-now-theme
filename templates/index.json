@@ -129,7 +129,7 @@
             "tab_text": "Wealth Accumulation",
             "banner_image": "shopify:\/\/shop_images\/cryptocurrency-mobile-app.webp",
             "icon": "chart",
-            "icon_color": "#FFFFFF",
+            "icon_color": "#ffffff",
             "icon_size": 28,
             "sub_title": "Investments can grow your wealth over time",
             "is_gradient": true,
@@ -151,7 +151,7 @@
             "tab_text": "Passive Income",
             "banner_image": "shopify:\/\/shop_images\/cryptocurrency-mobile-app.webp",
             "icon": "chart",
-            "icon_color": "#FFFFFF",
+            "icon_color": "#ffffff",
             "icon_size": 28,
             "sub_title": "Investments can grow your wealth over time",
             "is_gradient": true,
@@ -173,7 +173,7 @@
             "tab_text": "For Inflation Hedge",
             "banner_image": "shopify:\/\/shop_images\/cryptocurrency-mobile-app.webp",
             "icon": "chart",
-            "icon_color": "#FFFFFF",
+            "icon_color": "#ffffff",
             "icon_size": 28,
             "sub_title": "Investments can grow your wealth over time",
             "is_gradient": true,
@@ -195,7 +195,7 @@
             "tab_text": "Liquidity",
             "banner_image": "shopify:\/\/shop_images\/cryptocurrency-mobile-app.webp",
             "icon": "chart",
-            "icon_color": "#FFFFFF",
+            "icon_color": "#ffffff",
             "icon_size": 28,
             "sub_title": "Investments can grow your wealth over time",
             "is_gradient": true,
@@ -217,7 +217,7 @@
             "tab_text": "Financial Security",
             "banner_image": "shopify:\/\/shop_images\/cryptocurrency-mobile-app.webp",
             "icon": "chart",
-            "icon_color": "#FFFFFF",
+            "icon_color": "#ffffff",
             "icon_size": 28,
             "sub_title": "Investments can grow your wealth over time",
             "is_gradient": true,
@@ -239,7 +239,7 @@
             "tab_text": "Retirement Planning",
             "banner_image": "shopify:\/\/shop_images\/cryptocurrency-mobile-app.webp",
             "icon": "chart",
-            "icon_color": "#FFFFFF",
+            "icon_color": "#ffffff",
             "icon_size": 28,
             "sub_title": "Investments can grow your wealth over time",
             "is_gradient": true,
@@ -261,7 +261,7 @@
             "tab_text": "Tax Benefits",
             "banner_image": "shopify:\/\/shop_images\/cryptocurrency-mobile-app.webp",
             "icon": "chart",
-            "icon_color": "#FFFFFF",
+            "icon_color": "#ffffff",
             "icon_size": 28,
             "sub_title": "Investments can grow your wealth over time",
             "is_gradient": true,
@@ -292,15 +292,96 @@
     },
     "stocks_section_9YrfQy": {
       "type": "stocks-section",
+      "blocks": {
+        "crypto_icon_3YC8nB": {
+          "type": "crypto_icon",
+          "settings": {
+            "icon": "btc"
+          }
+        },
+        "crypto_icon_4QdP8U": {
+          "type": "crypto_icon",
+          "settings": {
+            "icon": "btc"
+          }
+        },
+        "crypto_icon_hh9Mqx": {
+          "type": "crypto_icon",
+          "settings": {
+            "icon": "btc"
+          }
+        },
+        "crypto_icon_FmAfxC": {
+          "type": "crypto_icon",
+          "settings": {
+            "icon": "btc"
+          }
+        },
+        "crypto_icon_AJWd3q": {
+          "type": "crypto_icon",
+          "settings": {
+            "icon": "btc"
+          }
+        },
+        "crypto_icon_DRMVdW": {
+          "type": "crypto_icon",
+          "settings": {
+            "icon": "btc"
+          }
+        },
+        "crypto_icon_wQ8UWp": {
+          "type": "crypto_icon",
+          "settings": {
+            "icon": "btc"
+          }
+        },
+        "crypto_icon_hGdPdr": {
+          "type": "crypto_icon",
+          "settings": {
+            "icon": "btc"
+          }
+        },
+        "crypto_icon_dhGTtj": {
+          "type": "crypto_icon",
+          "settings": {
+            "icon": "btc"
+          }
+        },
+        "crypto_icon_jJHGFA": {
+          "type": "crypto_icon",
+          "settings": {
+            "icon": "btc"
+          }
+        },
+        "crypto_icon_VPmPCm": {
+          "type": "crypto_icon",
+          "settings": {
+            "icon": "btc"
+          }
+        }
+      },
+      "block_order": [
+        "crypto_icon_3YC8nB",
+        "crypto_icon_4QdP8U",
+        "crypto_icon_hh9Mqx",
+        "crypto_icon_FmAfxC",
+        "crypto_icon_AJWd3q",
+        "crypto_icon_DRMVdW",
+        "crypto_icon_wQ8UWp",
+        "crypto_icon_hGdPdr",
+        "crypto_icon_dhGTtj",
+        "crypto_icon_jJHGFA",
+        "crypto_icon_VPmPCm"
+      ],
       "settings": {
         "banner_image": "shopify:\/\/shop_images\/stock-banner-image.webp",
         "title": "We provide many types of stock for you to invest",
         "title_font_size": 48,
         "title_width": 560,
-        "button_text": "",
-        "button_url": "",
-        "text_color": "#FFFFFF",
-        "bg_color": "#48B065"
+        "button_text": "Download Our App",
+        "button_url": "shopify:\/\/collections",
+        "text_color": "#ffffff",
+        "bg_color": "#48b065"
       }
     },
     "image_banner": {
