@@ -20,6 +20,12 @@
     }
 }
 
+@each $key, $value in $positions {
+    .#{$key} {
+        position: $value;
+    }
+}
+
 @for $i from 1 through 100 {
     .gap-#{$i} {
       gap: #{$i}px;

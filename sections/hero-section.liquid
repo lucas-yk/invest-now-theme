@@ -14,7 +14,7 @@
     | image_url: width: '1500'
     | image_tag: alt: section.settings.bg_image.alt, class: 'hero__image', height: null, width: null, loading: 'lazy'
   }}
-  <div class="hero__content flex flex-col align-center w-full gap-16">
+  <div class="hero__content flex flex-col align-center gap-16">
     {%- for block in section.blocks -%}
       {%- case block.type -%}
         {%- when 'button' -%}
