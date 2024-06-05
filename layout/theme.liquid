@@ -256,6 +256,22 @@
 
       @font-face {
         font-family: 'Instrument Sans';
+        src: url('{{ "InstrumentSans-Medium.woff2" |  asset_url }}') format('woff2'),
+            url('{{ "InstrumentSans-Medium.ttf" |  asset_url }}') format('truetype');
+        font-weight: 500;
+        font-style: normal;
+      }
+
+      @font-face {
+        font-family: 'Instrument Sans';
+        src: url('{{ "InstrumentSans-SemiBold.woff2" |  asset_url }}') format('woff2'),
+            url('{{ "InstrumentSans-SemiBold.ttf" |  asset_url }}') format('truetype');
+        font-weight: 600;
+        font-style: normal;
+      }
+
+      @font-face {
+        font-family: 'Instrument Sans';
         src: url('{{ 'InstrumentSans-Bold.woff2' | asset_url }}') format('woff2'),
             url('{{ 'InstrumentSans-Bold.ttf' | asset_url }}') format('truetype');
         font-weight: bold;

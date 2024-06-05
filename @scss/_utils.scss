@@ -30,13 +30,36 @@
     .gap-#{$i} {
       gap: #{$i}px;
     }
+
+    .round-#{$i} {
+        border-radius: #{$i}px;
+    }
+}
+
+.round-half {
+    border-radius: 50%;
 }
 
 .mx-auto {
     margin: 0 auto;
 }
 
-.w-full {
-    width: 100%;
+@each $key, $value in $colors {
+    .bg--#{$key} {
+        background-color: $value;
+    }
+}
+
+.bg--gradient {
+    background: linear-gradient(135deg, #48B065 12.5%, #1E4A2A 227.02%);
+}
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
 }
 

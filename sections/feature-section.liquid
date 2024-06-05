@@ -11,8 +11,120 @@
           </h2>
       {%- endcase -%}
     {%- endfor -%}
+    <div class="feature__tab-wrapper">
+      {%- assign tab_blocks = section.blocks | where: 'type', 'tab' -%}
+      {% style %}
+        {%- for tab in tab_blocks -%}
+          #{{ tab.settings.tab_id }}:checked ~ .feature__tab-panels #{{ tab.settings.tab_id }}-panel {
+            display: flex;
+          }
+
+          #{{ tab.settings.tab_id }}:checked ~ .feature__tabs #{{ tab.settings.tab_id }}-tab {
+            background:#ffffff;
+            color:#071E12;
+            border-radius: 50px;
+            box-shadow: 0px 4px 20px 0px #CADFD0;
+            font-weight: 600;
+          }
+        {%- endfor -%}
+      {% endstyle %}
+      {%- for tab in tab_blocks -%}
+        <input
+          class="tab_radio"
+          id="{{ tab.settings.tab_id }}"
+          name="group"
+          type="radio"
+          {%- if forloop.first -%}
+            checked
+          {%- endif -%}
+        >
+      {%- endfor -%}
+      <div class="feature__tabs">
+        {%- for tab in tab_blocks -%}
+          <label class="tab__button" id="{{ tab.settings.tab_id }}-tab" for="{{ tab.settings.tab_id }}">
+            {{- tab.settings.tab_text -}}
+          </label>
+        {%- endfor -%}
+      </div>
+      <div class="feature__tab-panels">
+        {%- for tab in tab_blocks -%}
+          <div class="tab-panel" id="{{ tab.settings.tab_id }}-panel">
+            <div class="tab-panel__detail w-1/2 flex flex-col flex-between">
+              <div class="flex flex-col gap-15">
+                {%- if tab.settings.icon != blank -%}
+                  <span class="flex flex-center align-center w-78 h-78 round-half bg--green-overlay">
+                    <span class="flex flex-center align-center w-62 h-62 round-half bg--gradient">
+                      {%- render 'icon',
+                        icon_type: tab.settings.icon,
+                        color: tab.settings.icon_color,
+                        size: tab.settings.icon_size
+                      -%}
+                    </span>
+                  </span>
+                {%- endif -%}
+                {%- if tab.settings.sub_title -%}
+                  <h4
+                    class="
+                      feature__tab__sub-title {% if tab.settings.is_gradient %}
+                        text-gradient--2
+                      {%- endif -%}
+                    "
+                  >
+                    {{ tab.settings.sub_title }}
+                  </h4>
+                {%- endif -%}
+                {%- if tab.settings.description -%}
+                  <span class="feature__tab__description">{{ tab.settings.description }}</span>
+                {%- endif -%}
+              </div>
+              <div class="flex flex-col gap-45">
+                <ul
+                  class="flex flex-col gap-15"
+                  style="margin-block-start: 0; margin-block-end: 0; padding-inline-start: 0;"
+                >
+                  {%- assign features = tab.settings.features | split: '|' -%}
+                  {%- for feature in features -%}
+                    <li class="feature__description flex align-center gap-7">
+                      <div class="flex flex-center align-center icon-wrapper w-22 h-22 bg--green-overlay round-11">
+                        {%- render 'icon-caret-right', size: 9, color: '#48B065' -%}
+                      </div>
+                      <span>{{ feature }}</span>
+                    </li>
+                  {%- endfor -%}
+                </ul>
+                {%- if tab.settings.button_text != blank -%}
+                  <a
+                    class="tab-panel__btn btn btn--primary btn--lg"
+                    href="{{ tab.settings.button_url }}"
+                    style="color: {{ tab.settings.text_color}}; display: inline-block;"
+                  >
+                    {{- tab.settings.button_text -}}
+                  </a>
+                {%- endif -%}
+                <a></a>
+              </div>
+            </div>
+            <div class="w-1/2">
+              {%- if tab.settings.banner_image != blank -%}
+                {{
+                  tab.settings.banner_image
+                  | image_url: width: '800'
+                  | image_tag:
+                    alt: tab.settings.banner_image.alt,
+                    class: 'banner-image',
+                    height: null,
+                    width: null,
+                    loading: 'lazy'
+                }}
+              {%- endif -%}
+            </div>
+          </div>
+        {%- endfor -%}
+      </div>
+    </div>
   </div>
 </div>
+
 {%- schema -%}
 {
   "name": "Feature Section",
@@ -82,6 +194,22 @@
             }
           ],
           "default": "chart"
+        },
+        {
+          "type": "color",
+          "id": "icon_color",
+          "label": "Icon Color",
+          "default": "#FFFFFF"
+        },
+        {
+          "type": "range",
+          "id": "icon_size",
+          "label": "Icon Size",
+          "min": 10,
+          "max": 50,
+          "unit": "px",
+          "step": 1,
+          "default": 28
         },
         {
           "type": "text",
