@@ -1,0 +1,17 @@
+.btn {
+    text-decoration: none;
+
+    @each $key, $value in $colors {
+        &--#{$key} {
+            background: $value;
+        }
+    }
+
+    @each $value in $sizes {
+        &--#{$value} {
+            @if $value == "lg" {
+                padding: 16px 32px;
+            }
+        }
+    }
+}

@@ -29,10 +29,38 @@
   }
 
   &__title {
-    font-size: 70px;
     font-weight: 500;
     line-height: 77px;
     letter-spacing: -0.03em;
     padding: 0 calc(min(calc((100vw - 900px) / 2), 250px));
+  }
+
+  &__description {
+    max-width: 476px;
+    font-family: Instrument Sans, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    opacity: 70%;
+  }
+
+  &__review {
+    &-btn {
+      box-shadow: 0px 0px 40px 0px #48b06566;
+      border: 1px solid;
+      border-image-source: linear-gradient(180deg, rgba(255, 255, 255, 0.65) 0%, rgba(255, 255, 255, 0) 65.57%);
+      border-radius: 100px;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 21.96px;
+      text-align: center;
+    }
+
+    &-description {
+      font-family: Instrument Sans, sans-serif;
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 18.3px;
+    }
   }
 }

@@ -1,5 +1,9 @@
 .heading {
     font-family: Instrument Sans, sans-serif;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
 }
 
 .text {
@@ -12,4 +16,10 @@
 
 .center {
     text-align: center;
+}
+
+@each $key, $value in $colors {
+    .text--#{$key} {
+        color: $value;
+    }
 }

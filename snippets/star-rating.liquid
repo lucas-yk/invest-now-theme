@@ -1,0 +1,40 @@
+{% assign full_stars = rating | floor %}
+{% assign has_half_star = rating | modulo: 1 %}
+<div class="star-rating">
+  {% for i in (1..5) %}
+    {% if i <= full_stars %}
+      <svg
+        style="width: {{ star_size }}px; height: {{ star_size }}px;"
+        viewBox="0 0 40 38"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path d="M20 0L24.7148 14.5106H39.9722L27.6287 23.4787L32.3435 37.9894L20 29.0213L7.65651 37.9894L12.3713 23.4787L0.027813 14.5106H15.2852L20 0Z" fill="#fddd33"/>
+      </svg>
+    {% elsif has_half_star > 0 %}
+      <svg
+        style="width: {{ star_size }}px; height: {{ star_size }}px;"
+        viewBox="0 0 40 38"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path d="M20 1.61804L24.2393 14.6652L24.3515 15.0106H24.7148H38.4333L27.3348 23.0742L27.0409 23.2877L27.1532 23.6332L31.3924 36.6803L20.2939 28.6168L20 28.4033L19.7061 28.6168L8.60756 36.6803L12.8468 23.6332L12.9591 23.2877L12.6652 23.0742L1.56665 15.0106H15.2852H15.6485L15.7607 14.6652L20 1.61804Z" fill="url(#paint0_linear_1_45)" stroke="{{ star_fill }}"/>
+        <defs>
+        <linearGradient id="paint0_linear_1_45" x1="21.5" y1="21" x2="20" y2="21" gradientUnits="userSpaceOnUse">
+        <stop stop-color="#EFF0F5"/>
+        <stop offset="1" stop-color="{{ star_fill }}"/>
+        </linearGradient>
+        </defs>
+      </svg>
+    {% else %}
+      <svg
+        style="width: {{ star_size }}px; height: {{ star_size }}px;"
+        viewBox="0 0 40 38"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path d="M20 0L24.7148 14.5106H39.9722L27.6287 23.4787L32.3435 37.9894L20 29.0213L7.65651 37.9894L12.3713 23.4787L0.027813 14.5106H15.2852L20 0Z" fill="{{ star_empty }}"/>
+      </svg>
+    {% endif %}
+  {% endfor %}
+</div>

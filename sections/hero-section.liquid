@@ -14,7 +14,7 @@
     | image_url: width: '1500'
     | image_tag: alt: section.settings.bg_image.alt, class: 'hero__image', height: null, width: null, loading: 'lazy'
   }}
-  <div class="hero__content flex flex-col align-center w-full">
+  <div class="hero__content flex flex-col align-center w-full gap-16">
     {%- for block in section.blocks -%}
       {%- case block.type -%}
         {%- when 'button' -%}
@@ -33,17 +33,37 @@
         {%- when 'title' -%}
           <h1
             class="hero__title heading center {%if block.settings.is_gradient%}text-gradient{%- endif -%}"
-            style="font-size: {{ block.settings.title_font-size }}px;"
+            style="font-size: {{ block.settings.title_font_size }}px;"
           >
             {{ block.settings.title }}
           </h1>
-        {%- when 'sub_title' -%}
-          <div class="hero__description">{{ block.settings.description }}</div>
+        {%- when 'description' -%}
+          <div class="hero__description text--center" style="color: {{ block.settings.text_color }}">
+            {{ block.settings.description }}
+          </div>
+        {%- when 'review' -%}
+          <div class="hero__review flex align-center gap-25">
+            <a
+              class="hero__review-btn btn btn--primary btn--lg"
+              href="{{ block.settings.button_url }}"
+              style="color: {{ block.settings.text_color}};"
+            >
+              {{- block.settings.button_text -}}
+            </a>
+            <div class="flex flex-col flex-center align-center">
+              {%- render 'star-rating',
+                star_size: 20,
+                star_fill: block.settings.star_color,
+                rating: block.settings.review_rating
+              -%}
+              <span class="hero__review-description" style="color: {{ block.settings.description_color }};">
+                {{- block.settings.description -}}
+              </span>
+            </div>
+          </div>
       {%- endcase -%}
     {%- endfor -%}
   </div>
-
-  {% comment %} <img class="hero__image" src="{{ section.settings.bg_image |  image_url }}" style="width: 100%;"> {% endcomment %}
 </div>
 {%- schema -%}
 {
@@ -215,6 +235,12 @@
           "type": "textarea",
           "id": "description",
           "label": "Description"
+        },
+        {
+          "type": "color",
+          "id": "description_color",
+          "label": "Description Color",
+          "default": "#FFF"
         }
       ]
     }
