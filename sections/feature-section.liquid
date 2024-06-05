@@ -1,5 +1,17 @@
 <div class="section section-feature">
-  <div class="container"></div>
+  <div class="container">
+    {%- for block in section.blocks -%}
+      {%- case block.type %}
+        {%- when 'title' -%}
+          <h2
+            class="title feature__title w-1/2 {%if block.settings.is_gradient%}text-gradient--2{%- endif -%}"
+            style="font-size: {{ block.settings.title_font_size }}px;"
+          >
+            {{ block.settings.title }}
+          </h2>
+      {%- endcase -%}
+    {%- endfor -%}
+  </div>
 </div>
 {%- schema -%}
 {
@@ -53,13 +65,7 @@
           "type": "text",
           "id": "tab_text",
           "label": "Tab Text"
-        }
-      ]
-    },
-    {
-      "type": "feature_block",
-      "name": "Feature Block",
-      "settings": [
+        },
         {
           "type": "image_picker",
           "id": "banner_image",
@@ -139,17 +145,12 @@
           "id": "bg_color",
           "label": "Button Background Color",
           "default": "#48B065"
-        }
-      ]
-    },
-    {
-      "type": "featuere",
-      "name": "Feature",
-      "settings": [
+        },
         {
-          "type": "text",
-          "id": "description",
-          "label": "Description"
+          "type": "textarea",
+          "id": "features",
+          "label": "Features",
+          "info": "Each item is splitted by '|'"
         }
       ]
     }

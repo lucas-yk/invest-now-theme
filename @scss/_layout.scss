@@ -1,4 +1,14 @@
 .container {
     width: 1210px;
-    left: calc((100vw - 1210px) / 2);
+    margin-left: calc((100vw - 1210px) / 2);
+}
+
+.w-full {
+    width: 100%;
+}
+
+@for $i from 1 through 8 {
+    .w-1\/#{$i} {
+      width: calc(100% / $i);
+    }
 }
