@@ -1,0 +1,104 @@
+<div class="section section-brand">
+  <h2 class="title brand__title">{{ section.settings.title }}</h2>
+  <div class="brand__wrapper">
+    {%- assign blocks = section.blocks -%}
+    {%- if section.settings.block_type == 'normal' -%}
+      <div class="flex">
+        {%- for block in blocks -%}
+          {{
+            block.settings.brand_logo
+            | image_url: width: '150'
+            | image_tag:
+              alt: block.settings.brand_logo.alt,
+              class: 'brand-logo__image',
+              height: null,
+              width: null,
+              loading: 'lazy'
+          }}
+        {%- endfor -%}
+      </div>
+    {%- else -%}
+      <div class="swiper brand-swiper">
+        <div class="swiper-wrapper">
+          {%- for block in blocks -%}
+            <div class="swiper-slide">
+              {{
+                block.settings.brand_logo
+                | image_url: width: '150'
+                | image_tag:
+                  alt: block.settings.brand_logo.alt,
+                  class: 'brand-logo__image',
+                  height: null,
+                  width: null,
+                  loading: 'lazy'
+              }}
+            </div>
+          {%- endfor -%}
+        </div>
+      </div>
+    {%- endif -%}
+  </div>
+</div>
+{%- schema -%}
+{
+  "name": "Brand Section",
+  "class": "section section-brand",
+  "settings": [
+    {
+      "type": "textarea",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+      "type": "select",
+      "id": "block_type",
+      "label": "Block Type",
+      "options": [
+        {
+          "value": "normal",
+          "label": "Normal"
+        },
+        {
+          "value": "slide",
+          "label": "Slide"
+        }
+      ],
+      "default": "normal"
+    },
+    {
+      "type": "range",
+      "id": "gap",
+      "label": "Gap Between Item",
+      "min": 20,
+      "max": 90,
+      "step": 5,
+      "default": 65,
+      "unit": "px"
+    },
+    {
+      "type": "checkbox",
+      "id": "has_border",
+      "label": "Has Border",
+      "default": true
+    }
+  ],
+  "blocks": [
+    {
+      "type": "brand",
+      "name": "Brand",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "brand_logo",
+          "label": "Brand Logo"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Brand Section"
+    }
+  ]
+}
+{%- endschema -%}
