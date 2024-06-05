@@ -51,6 +51,16 @@
         margin-left: calc((100vw - 1200px) / 2);
         padding-bottom: 50px;
 
+        .swiper-wrapper::before {
+            content: " ";
+            width: 1350px;
+            position: absolute;
+            height: 80px;
+            left: 0px;
+            background: linear-gradient(-270deg, rgba(255, 255, 255, 0) -55.04%, #FFFFFF 100%);
+            opacity: .7;
+            z-index: 10;
+        }
 
         .swiper-slide {
             display: flex;
