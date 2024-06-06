@@ -80,7 +80,7 @@
       "settings": {
         "bg_image": "shopify:\/\/shop_images\/footer-bg.webp",
         "copyright": "InvestNow By Afif Ubaidillah.",
-        "footer_link": ""
+        "footer_link": "footer"
       }
     },
     "footer": {
