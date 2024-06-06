@@ -556,8 +556,36 @@
         "sub_title": "We are very open and very happy if you give us feedback on us. Need more benefits?",
         "button_text": "Request For More",
         "button_url": "shopify:\/\/collections",
-        "text_color": "#FFFFFF",
-        "bg_color": "#48B065"
+        "text_color": "#ffffff",
+        "bg_color": "#48b065"
+      }
+    },
+    "mobile_app_section_mbrQ93": {
+      "type": "mobile-app-section",
+      "blocks": {
+        "app_link_VQezp9": {
+          "type": "app_link",
+          "settings": {
+            "link_image": "shopify:\/\/shop_images\/google-play.png",
+            "app_link_url": "shopify:\/\/collections"
+          }
+        },
+        "app_link_VJVzfA": {
+          "type": "app_link",
+          "settings": {
+            "link_image": "shopify:\/\/shop_images\/app-store.png",
+            "app_link_url": "shopify:\/\/collections"
+          }
+        }
+      },
+      "block_order": [
+        "app_link_VQezp9",
+        "app_link_VJVzfA"
+      ],
+      "settings": {
+        "bg_image": "shopify:\/\/shop_images\/mobile-app-bg_038dfbdd-0371-4fc1-a90f-becd4c5487c8.webp",
+        "title": "Let’s start investment today with Download our App",
+        "description": "Lorem ipsum dolor sit amet  conset atetur adipiscing elit, sed do eiusmod tempor incididunt."
       }
     },
     "image_banner": {
@@ -779,6 +807,7 @@
     "stocks_section_9YrfQy",
     "about_section_yN7eBJ",
     "benefit_section_LndChp",
+    "mobile_app_section_mbrQ93",
     "image_banner",
     "rich_text",
     "featured_collection",
