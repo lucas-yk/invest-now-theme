@@ -413,10 +413,20 @@
         "title": "We provide many types of stock for you to invest",
         "title_font_size": 48,
         "title_width": 560,
+        "sub_title": "Our investment platform automatically detects and secures any data that is sensitive to you",
+        "sub_title_font_size": 22,
+        "sub_title_width": 495,
         "button_text": "Download Our App",
         "button_url": "shopify:\/\/collections",
         "text_color": "#ffffff",
         "bg_color": "#48b065"
+      }
+    },
+    "about_section_yN7eBJ": {
+      "type": "about-section",
+      "settings": {
+        "title": "",
+        "description": "Lorem ipsum dolor sit amet  conset atetur adipiscing elit, sed do eiusmod tempor incididunt."
       }
     },
     "image_banner": {
@@ -636,6 +646,7 @@
     "brand_section_BFWjVA",
     "feature_section_HmV3PJ",
     "stocks_section_9YrfQy",
+    "about_section_yN7eBJ",
     "image_banner",
     "rich_text",
     "featured_collection",
