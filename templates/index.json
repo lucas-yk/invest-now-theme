@@ -560,6 +560,141 @@
         "bg_color": "#48b065"
       }
     },
+    "testimonials_z4DfVY": {
+      "type": "testimonials",
+      "blocks": {
+        "card_xbj3DG": {
+          "type": "card",
+          "settings": {
+            "rating": 5,
+            "feedback": "Duis aute irure dolor in reprehenderit in comdo voluptate velit esse cillum dolore eu fugiat nulla pariaturreprehenderit.",
+            "avatar": "shopify:\/\/shop_images\/avatar1.png",
+            "username": "Afif Ubaidillah",
+            "role": "UI\/UX Designer"
+          }
+        },
+        "card_TWeXC9": {
+          "type": "card",
+          "settings": {
+            "rating": 5,
+            "feedback": "Duis aute irure dolor in reprehenderit in comdo voluptate velit esse cillum dolore eu fugiat nulla pariaturreprehenderit.",
+            "avatar": "shopify:\/\/shop_images\/avatar1.png",
+            "username": "Afif Ubaidillah",
+            "role": "UI\/UX Designer"
+          }
+        },
+        "card_wwfzdU": {
+          "type": "card",
+          "settings": {
+            "rating": 5,
+            "feedback": "Duis aute irure dolor in reprehenderit in comdo voluptate velit esse cillum dolore eu fugiat nulla pariaturreprehenderit.",
+            "avatar": "shopify:\/\/shop_images\/avatar1.png",
+            "username": "Afif Ubaidillah",
+            "role": "UI\/UX Designer"
+          }
+        },
+        "card_W37fPa": {
+          "type": "card",
+          "settings": {
+            "rating": 5,
+            "feedback": "Duis aute irure dolor in reprehenderit in comdo voluptate velit esse cillum dolore eu fugiat nulla pariaturreprehenderit.",
+            "avatar": "shopify:\/\/shop_images\/avatar1.png",
+            "username": "Afif Ubaidillah",
+            "role": "UI\/UX Designer"
+          }
+        },
+        "card_dLWj8L": {
+          "type": "card",
+          "settings": {
+            "rating": 5,
+            "feedback": "Duis aute irure dolor in reprehenderit in comdo voluptate velit esse cillum dolore eu fugiat nulla pariaturreprehenderit.",
+            "avatar": "shopify:\/\/shop_images\/avatar1.png",
+            "username": "Afif Ubaidillah",
+            "role": "UI\/UX Designer"
+          }
+        },
+        "card_WRNicV": {
+          "type": "card",
+          "settings": {
+            "rating": 5,
+            "feedback": "Duis aute irure dolor in reprehenderit in comdo voluptate velit esse cillum dolore eu fugiat nulla pariaturreprehenderit.",
+            "avatar": "shopify:\/\/shop_images\/avatar1.png",
+            "username": "Afif Ubaidillah",
+            "role": "UI\/UX Designer"
+          }
+        },
+        "card_fcT8AY": {
+          "type": "card",
+          "settings": {
+            "rating": 5,
+            "feedback": "Duis aute irure dolor in reprehenderit in comdo voluptate velit esse cillum dolore eu fugiat nulla pariaturreprehenderit.",
+            "avatar": "shopify:\/\/shop_images\/avatar1.png",
+            "username": "Afif Ubaidillah",
+            "role": "UI\/UX Designer"
+          }
+        },
+        "card_ze3iT9": {
+          "type": "card",
+          "settings": {
+            "rating": 5,
+            "feedback": "Duis aute irure dolor in reprehenderit in comdo voluptate velit esse cillum dolore eu fugiat nulla pariaturreprehenderit.",
+            "avatar": "shopify:\/\/shop_images\/avatar1.png",
+            "username": "Afif Ubaidillah",
+            "role": "UI\/UX Designer"
+          }
+        },
+        "card_JzUYhk": {
+          "type": "card",
+          "settings": {
+            "rating": 5,
+            "feedback": "Duis aute irure dolor in reprehenderit in comdo voluptate velit esse cillum dolore eu fugiat nulla pariaturreprehenderit.",
+            "avatar": "shopify:\/\/shop_images\/avatar1.png",
+            "username": "Afif Ubaidillah",
+            "role": "UI\/UX Designer"
+          }
+        },
+        "card_6bjXme": {
+          "type": "card",
+          "settings": {
+            "rating": 5,
+            "feedback": "Duis aute irure dolor in reprehenderit in comdo voluptate velit esse cillum dolore eu fugiat nulla pariaturreprehenderit.",
+            "avatar": "shopify:\/\/shop_images\/avatar1.png",
+            "username": "Afif Ubaidillah",
+            "role": "UI\/UX Designer"
+          }
+        },
+        "card_3xhiQ3": {
+          "type": "card",
+          "settings": {
+            "rating": 5,
+            "feedback": "Duis aute irure dolor in reprehenderit in comdo voluptate velit esse cillum dolore eu fugiat nulla pariaturreprehenderit.",
+            "avatar": "shopify:\/\/shop_images\/avatar1.png",
+            "username": "Afif Ubaidillah",
+            "role": "UI\/UX Designer"
+          }
+        }
+      },
+      "block_order": [
+        "card_xbj3DG",
+        "card_TWeXC9",
+        "card_wwfzdU",
+        "card_W37fPa",
+        "card_dLWj8L",
+        "card_WRNicV",
+        "card_fcT8AY",
+        "card_ze3iT9",
+        "card_JzUYhk",
+        "card_6bjXme",
+        "card_3xhiQ3"
+      ],
+      "settings": {
+        "title": "Take a look what our users said about our platforms",
+        "button_text": "View All Testimonials",
+        "button_url": "shopify:\/\/collections\/frontpage",
+        "text_color": "#FFFFFF",
+        "bg_color": "#48B065"
+      }
+    },
     "mobile_app_section_mbrQ93": {
       "type": "mobile-app-section",
       "blocks": {
@@ -679,8 +814,8 @@
         "description": "If you have anything else you want to ask, <a href=\"#\">reach out to us<\/a>.",
         "button_text": "Ask Help For More",
         "button_url": "shopify:\/\/collections",
-        "text_color": "#FFFFFF",
-        "bg_color": "#48B065"
+        "text_color": "#ffffff",
+        "bg_color": "#48b065"
       }
     }
   },
@@ -691,6 +826,7 @@
     "stocks_section_9YrfQy",
     "about_section_yN7eBJ",
     "benefit_section_LndChp",
+    "testimonials_z4DfVY",
     "mobile_app_section_mbrQ93",
     "faq_section_8TQaAt"
   ]
