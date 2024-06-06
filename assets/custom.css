@@ -2160,4 +2160,75 @@
   height: 48px;
 }
 
+.section-about {
+  padding-top: 120px;
+}
+
+.about__title {
+  font-family: Instrument Sans;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 40px;
+  letter-spacing: -0.03em;
+  text-align: left;
+  color: #071e12;
+  padding-right: 50px;
+  margin-bottom: 12px;
+}
+.about__title .highlight {
+  background: #edf7f0;
+  border: 1px solid #48b065;
+  border-radius: 100px;
+  padding: 5px 14px;
+  color: #48b065;
+}
+.about__description {
+  font-family: Instrument Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: rgba(7, 30, 18, 0.5019607843);
+  padding-right: 120px;
+  margin-bottom: 40px;
+}
+.about__feature-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 40px;
+  row-gap: 25px;
+}
+.about__feature-wrapper .feature__description {
+  font-family: Instrument Sans;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20.8px;
+  text-align: left;
+  color: #071e12;
+}
+
+.special-badge .badge__rating {
+  font-family: Instrument Sans;
+  font-size: 56px;
+  font-weight: 600;
+  line-height: 68.32px;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #071e12;
+}
+.special-badge .badge__description {
+  font-family: Instrument Sans;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17.08px;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: rgba(7, 30, 18, 0.5019607843);
+}
+
+.badge__splitter {
+  width: 1px;
+  height: 50px;
+  border-left: 1px solid rgba(7, 30, 18, 0.1490196078);
+}
+
 /*# sourceMappingURL=custom.css.map */

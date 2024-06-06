@@ -1,23 +1,25 @@
 <div class="section section-about">
   <div class="container flex flex-center gap-100">
     <div class="w-1/2">
-      {{
-        section.settings.banner_image
-        | image_url: width: '1000'
-        | image_tag:
-          alt: section.settings.banner_image.alt,
-          class: 'stock__banner-image',
-          height: null,
-          width: '50%',
-          loading: 'lazy'
-      }}
+      {% if section.settings.banner_image != blank %}
+        {{
+          section.settings.banner_image
+          | image_url: width: '1000'
+          | image_tag:
+            alt: section.settings.banner_image.alt,
+            class: 'w-full',
+            height: null,
+            width: '50%',
+            loading: 'lazy'
+        }}
+      {% endif %}
     </div>
     <div class="w-1/2 flex flex-col flex-between">
       <div class="flex flex-col">
         <h2 class="about__title">
           {{ section.settings.title }}
         </h2>
-        <span class="about__descrition">{{ section.settings.description }}</span>
+        <span class="about__description">{{ section.settings.description }}</span>
         <div class="about__feature-wrapper">
           {%- assign feature_blocks = section.blocks | where: 'type', 'feature' -%}
           {%- for feature in feature_blocks -%}
@@ -27,16 +29,16 @@
               {%- else -%}
                 {%- render 'icon-check-inactive' -%}
               {%- endif -%}
-              {{ feature.settings.feature_description }}
+              <span class="feature__description">{{ feature.settings.feature_description }}</span>
             </div>
           {%- endfor -%}
         </div>
       </div>
-      <div class="flex flex-col">
+      <div class="flex align-center gap-30">
         {%- assign badge_blocks = section.blocks | where: 'type', 'badge' -%}
         {%- for badge in badge_blocks -%}
-          {%- render 'badge', rating: badge.settings.rating, badge.settings.description: -%}
-          {% if forloop.index != forloop.last %}
+          {%- render 'badge', rating: badge.settings.rating, description: badge.settings.description: -%}
+          {% if forloop.first %}
             <span class="badge__splitter"></span>
           {% endif %}
         {%- endfor -%}
