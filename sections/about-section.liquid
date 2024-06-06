@@ -36,7 +36,7 @@
         {%- assign badge_blocks = section.blocks | where: 'type', 'badge' -%}
         {%- for badge in badge_blocks -%}
           {%- render 'badge', rating: badge.settings.rating, badge.settings.description: -%}
-          {% if !forloop.last %}
+          {% if forloop.index != forloop.last %}
             <span class="badge__splitter"></span>
           {% endif %}
         {%- endfor -%}
