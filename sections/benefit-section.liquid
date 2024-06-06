@@ -1,0 +1,142 @@
+<div class="section section-benefit">
+  <div class="container benefit__container">
+    <h2 class="benefit__title">{{ section.settings.title }}</h2>
+    <div class="benefit__card-wrapper">
+      {% assign benefit_blocks = section.blocks | where: 'type', 'benefit_card' %}
+      {% for benefit in benefit_blocks %}
+        <div class="beniefit__card flex flex-col align-center gap-25">
+          {% render 'benefit-card-icon', icon_type: benefit.settings.icon %}
+          <h5 class="card-title">{{ benefit.settings.card_title }}</h5>
+          <span class="card-description">{{ benefit.settings.card__description }}</span>
+          <a class="card-link" href="{{ benefit.settings.card_link_url }}">
+            {{- benefit.settings.card_link_text }}
+            <span>{% render 'icon-arrow-right', size: 10 %}</span></a
+          >
+        </div>
+      {% endfor %}
+    </div>
+    <div class="flex flex-between">
+      <h4 class="benefit__sub-title">{{ section.settings.sub_title }}</h4>
+      <a
+        class="btn btn--primary btn--lg"
+        href="{{ section.settings.button_url }}"
+        style="color: {{ section.settings.text_color}}; display: inline-block;"
+      >
+        {{- section.settings.button_text -}}
+      </a>
+    </div>
+  </div>
+</div>
+{% schema %}
+{
+  "name": "Benefit Section",
+  "class": "section section-benefit",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "bg_image",
+      "label": "Background Image"
+    },
+    {
+      "type": "textarea",
+      "id": "title",
+      "label": "Title",
+      "default": "All the benefits you get if you invest with InvestNow"
+    },
+    {
+      "type": "text",
+      "id": "sub_title",
+      "label": "Sub Title",
+      "default": "We are very open and very happy if you give us feedback on us. Need more benefits?"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button Text"
+    },
+    {
+      "type": "url",
+      "id": "button_url",
+      "label": "Button URL"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Button Text Color",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Button Background Color",
+      "default": "#48B065"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "benefit_card",
+      "name": "Benefit Card",
+      "settings": [
+        {
+          "type": "select",
+          "label": "Icon",
+          "id": "icon",
+          "options": [
+            {
+              "value": "solar-chart",
+              "label": "Solar Chart"
+            },
+            {
+              "value": "guard",
+              "label": "Guard"
+            },
+            {
+              "value": "income",
+              "label": "Income"
+            },
+            {
+              "value": "wallet",
+              "label": "Wallet"
+            },
+            {
+              "value": "tax",
+              "label": "Tax"
+            },
+            {
+              "value": "group",
+              "label": "Group"
+            }
+          ],
+          "default": "solar-chart"
+        },
+        {
+          "type": "text",
+          "id": "card_title",
+          "label": "Card Title"
+        },
+        {
+          "type": "text",
+          "id": "card_description",
+          "label": "Card Description"
+        },
+        {
+          "type": "text",
+          "id": "card_link_text",
+          "label": "Card Link Text",
+          "default": "Request For More"
+        },
+        {
+          "type": "url",
+          "id": "card_link_url",
+          "label": "Card Link Url"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Benefit Section"
+    }
+  ]
+}
+{% endschema %}
