@@ -14,32 +14,32 @@
         "link_list_U8DfMb": {
           "type": "link_list",
           "settings": {
-            "title": "Quick Links",
-            "link_list": "",
+            "title": "Company",
+            "link_list": "company-links",
             "width": 20
           }
         },
         "link_list_NGBEdn": {
           "type": "link_list",
           "settings": {
-            "title": "Quick Links",
-            "link_list": "",
+            "title": "Integrations",
+            "link_list": "integrations",
             "width": 20
           }
         },
         "link_list_3J83TU": {
           "type": "link_list",
           "settings": {
-            "title": "Quick Links",
-            "link_list": "",
+            "title": "Resources",
+            "link_list": "resources",
             "width": 20
           }
         },
         "link_list_zjf9g7": {
           "type": "link_list",
           "settings": {
-            "title": "Quick Links",
-            "link_list": "",
+            "title": "Help Center",
+            "link_list": "help-center",
             "width": 20
           }
         },
