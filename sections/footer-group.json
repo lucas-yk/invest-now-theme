@@ -5,13 +5,6 @@
     "custom_footer_GcyyEF": {
       "type": "custom-footer",
       "blocks": {
-        "logo_Wyaazb": {
-          "type": "logo",
-          "settings": {
-            "logo_image": "shopify:\/\/shop_images\/invest-now-logo.webp",
-            "text": "Maximize your business and investment profits with expert guidance and innovative solutions."
-          }
-        },
         "newsletter_form_gqhjFM": {
           "type": "newsletter-form",
           "settings": {
@@ -66,16 +59,23 @@
             "whatsapp": "shopify:\/\/collections",
             "telegram": "shopify:\/\/collections"
           }
+        },
+        "footer_logo_RFCVPT": {
+          "type": "footer_logo",
+          "settings": {
+            "logo_image": "shopify:\/\/shop_images\/invest-now-logo.webp",
+            "text": "Maximize your business and investment profits with expert guidance and innovative solutions."
+          }
         }
       },
       "block_order": [
-        "logo_Wyaazb",
         "newsletter_form_gqhjFM",
         "link_list_U8DfMb",
         "link_list_NGBEdn",
         "link_list_3J83TU",
         "link_list_zjf9g7",
-        "mobile_app_6GmRMp"
+        "mobile_app_6GmRMp",
+        "footer_logo_RFCVPT"
       ],
       "settings": {
       }
