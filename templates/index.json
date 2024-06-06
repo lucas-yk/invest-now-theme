@@ -302,97 +302,68 @@
         "crypto_icon_4QdP8U": {
           "type": "crypto_icon",
           "settings": {
-            "icon": "btc"
+            "icon": "ether"
+          }
+        },
+        "crypto_icon_RwyChw": {
+          "type": "crypto_icon",
+          "settings": {
+            "icon": "tether"
           }
         },
         "crypto_icon_hh9Mqx": {
           "type": "crypto_icon",
           "settings": {
-            "icon": "btc"
+            "icon": "sol"
           }
         },
         "crypto_icon_FmAfxC": {
           "type": "crypto_icon",
           "settings": {
-            "icon": "btc"
+            "icon": "usdc"
           }
         },
         "crypto_icon_AJWd3q": {
           "type": "crypto_icon",
           "settings": {
-            "icon": "btc"
+            "icon": "xrp"
           }
         },
         "crypto_icon_DRMVdW": {
           "type": "crypto_icon",
           "settings": {
-            "icon": "btc"
+            "icon": "avax"
           }
         },
         "crypto_icon_wQ8UWp": {
           "type": "crypto_icon",
           "settings": {
-            "icon": "btc"
+            "icon": "doge"
           }
         },
         "crypto_icon_hGdPdr": {
           "type": "crypto_icon",
           "settings": {
-            "icon": "btc"
+            "icon": "doge"
           }
         },
         "crypto_icon_dhGTtj": {
           "type": "crypto_icon",
           "settings": {
-            "icon": "btc"
+            "icon": "terra-luna"
           }
         },
         "crypto_icon_jJHGFA": {
           "type": "crypto_icon",
           "settings": {
-            "icon": "btc"
-          }
-        },
-        "crypto_icon_VPmPCm": {
-          "type": "crypto_icon",
-          "settings": {
-            "icon": "btc"
-          }
-        },
-        "crypto_icon_iJwQce": {
-          "type": "crypto_icon",
-          "settings": {
-            "icon": "btc"
-          }
-        },
-        "crypto_icon_LtRnz3": {
-          "type": "crypto_icon",
-          "settings": {
-            "icon": "btc"
-          }
-        },
-        "crypto_icon_gHyNDP": {
-          "type": "crypto_icon",
-          "settings": {
-            "icon": "btc"
-          }
-        },
-        "crypto_icon_8QJb8E": {
-          "type": "crypto_icon",
-          "settings": {
-            "icon": "btc"
-          }
-        },
-        "crypto_icon_anCih6": {
-          "type": "crypto_icon",
-          "settings": {
-            "icon": "btc"
+            "icon": "bnb"
           }
         }
       },
       "block_order": [
         "crypto_icon_3YC8nB",
         "crypto_icon_4QdP8U",
+        "crypto_icon_RwyChw",
         "crypto_icon_hh9Mqx",
         "crypto_icon_FmAfxC",
         "crypto_icon_AJWd3q",
@@ -400,13 +371,7 @@
         "crypto_icon_wQ8UWp",
         "crypto_icon_hGdPdr",
         "crypto_icon_dhGTtj",
-        "crypto_icon_jJHGFA",
-        "crypto_icon_VPmPCm",
-        "crypto_icon_iJwQce",
-        "crypto_icon_LtRnz3",
-        "crypto_icon_gHyNDP",
-        "crypto_icon_8QJb8E",
-        "crypto_icon_anCih6"
+        "crypto_icon_jJHGFA"
       ],
       "settings": {
         "banner_image": "shopify:\/\/shop_images\/stock-bg.webp",
@@ -691,8 +656,8 @@
         "title": "Take a look what our users said about our platforms",
         "button_text": "View All Testimonials",
         "button_url": "shopify:\/\/collections\/frontpage",
-        "text_color": "#FFFFFF",
-        "bg_color": "#48B065"
+        "text_color": "#ffffff",
+        "bg_color": "#48b065"
       }
     },
     "mobile_app_section_mbrQ93": {
