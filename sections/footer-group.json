@@ -5,7 +5,7 @@
     "custom_footer_GcyyEF": {
       "type": "custom-footer",
       "blocks": {
-        "logo_UYmzUt": {
+        "logo_Wyaazb": {
           "type": "logo",
           "settings": {
             "logo_image": "shopify:\/\/shop_images\/invest-now-logo.webp",
@@ -69,7 +69,7 @@
         }
       },
       "block_order": [
-        "logo_UYmzUt",
+        "logo_Wyaazb",
         "newsletter_form_gqhjFM",
         "link_list_U8DfMb",
         "link_list_NGBEdn",
