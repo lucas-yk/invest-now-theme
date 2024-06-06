@@ -1,0 +1,163 @@
+.stock {
+  &__title {
+    font-family: Instrument Sans;
+    font-weight: 500;
+    line-height: 55.2px;
+    letter-spacing: -0.03em;
+    margin-bottom: 0;
+  }
+
+  &__btn {
+    bottom: 80px;
+    border-radius: 100px;
+    padding: 15px 25px;
+    font-family: Instrument Sans;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.52px;
+    text-align: center;
+  }
+
+  &-swiper {
+    inset-block-start: calc(50% - 150px);
+    width: 100%;
+
+    .swiper-wrapper {
+      left: 20px !important;
+      display: flex;
+      align-items: center;
+      .swiper-slide {
+        width: 110px;
+        height: 110px;
+
+        .icon__outer-wrapper {
+          width: 100%;
+          height: 100%;
+          background: #d8f3df;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          .icon__inner-wrapper {
+            width: 88px;
+            height: 88px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1.22px solid #ffffff;
+            border-radius: 50%;
+            background: #ffffff;
+            box-shadow: 0px 2.44px 7.31px 0px #00000026;
+
+            svg {
+              width: 48px;
+              height: 48px;
+            }
+          }
+        }
+
+        &-active {
+          width: 150px;
+          height: 150px;
+          .icon__outer-wrapper {
+            width: 100%;
+            height: 100%;
+            border-width: 0px 1.22px 0px 1.22px;
+            border-image: linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
+            border-radius: 50%;
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(212, 223, 180, 0.25) 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .icon__inner-wrapper {
+              width: 125px;
+              height: 125px;
+              border: 1.22px solid #ffffff;
+              box-shadow: 0px 2.44px 7.31px 0px #00000026;
+              background: #ffffff;
+              border-radius: 50%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+
+              svg {
+                width: 78px;
+                height: 78px;
+              }
+            }
+          }
+        }
+
+        &-prev {
+          width: 110px;
+          height: 110px;
+          .icon__outer-wrapper {
+            width: 100%;
+            height: 100%;
+            border-width: 0px 1.5px 0px 1.5px;
+            border-style: solid;
+            border-image: linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
+            border-radius: 50%;
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(212, 223, 180, 0.25) 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .icon__inner-wrapper {
+              width: 88px;
+              height: 88px;
+              border: 1.22px solid #ffffff;
+              box-shadow: 0px 2.44px 7.31px 0px #00000026;
+              background: #ffffff;
+              border-radius: 50%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+
+              svg {
+                width: 48px;
+                height: 48px;
+              }
+            }
+          }
+        }
+
+        &-next {
+          width: 110px;
+          height: 110px;
+          .icon__outer-wrapper {
+            width: 100%;
+            height: 100%;
+            border-width: 0px 1px 0px 1px;
+            border-style: solid;
+            border-image: linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
+            border-radius: 50%;
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(212, 223, 180, 0.25) 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .icon__inner-wrapper {
+              width: 88px;
+              height: 88px;
+              border: 1.22px solid #ffffff;
+              box-shadow: 0px 2.44px 7.31px 0px #00000026;
+              background: #ffffff;
+              border-radius: 50%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+
+              svg {
+                width: 48px;
+                height: 48px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

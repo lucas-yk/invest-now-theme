@@ -1,6 +1,212 @@
+<div class="section section-stocks flex flex-col align-center">
+  <h2
+    class="stock__title text-gradient--2 center"
+    style="width: {{ section.settings.title_width }}px; font-size: {{ section.settings.title_font_size }}px;"
+  >
+    We provide many types of stock for you to invest
+  </h2>
+  <div class="stock_wrapper relative flex flex-col flex-center w-full">
+    {{
+      section.settings.banner_image
+      | image_url: width: '1600'
+      | image_tag:
+        alt: section.settings.banner_image.alt,
+        class: 'stock__banner-image',
+        height: null,
+        width: '50%',
+        loading: 'lazy'
+    }}
+    <div class="swiper stock-swiper absolute">
+      <div class="swiper-wrapper">
+        {%- assign stock_icons = section.blocks | where: 'type', 'crypto_icon' -%}
+        {%- for block in stock_icons -%}
+          <div class="swiper-slide">
+            <div class="icon__outer-wrapper">
+              <div class="icon__inner-wrapper">
+                {%- render 'stock-icon', icon_type: block.settings.icon -%}
+              </div>
+            </div>
+          </div>
+        {%- endfor -%}
+      </div>
+    </div>
+    {%- if section.settings.button_text != blank -%}
+      <a
+        class="stock__btn btn btn--primary btn--lg absolute"
+        href="{{ section.settings.button_url }}"
+        style="color: {{ section.settings.text_color}}; display: inline-block;"
+      >
+        {{- section.settings.button_text -}}
+      </a>
+    {%- endif -%}
+  </div>
+  {%- if section.settings.sub_title != blank -%}
+    <h4
+      class="stock__sub-title text-gradient--2 center"
+      style="width: {{ section.settings.sub_title_width }}px; font-size: {{ section.settings.sub_title_font_size }}px;"
+    ></h4>
+  {%- endif -%}
+</div>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    // Your JavaScript code here
+    var swiper = new Swiper('.stock-swiper', {
+      spaceBetween: 30,
+      slidesPerView: 'auto',
+      centeredSlides: true,
+      loop: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+    });
+  });
+</script>
 {% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
+{
+  "name": "Stock Section",
+  "class": "section section-stock",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "banner_image",
+      "label": "Banner Image"
+    },
+    {
+      "type": "textarea",
+      "id": "title",
+      "label": "Title",
+      "default": "We provide many types of stock for you to invest"
+    },
+    {
+      "type": "range",
+      "id": "title_font_size",
+      "label": "Title Font Size",
+      "min": 10,
+      "max": 60,
+      "unit": "px",
+      "step": 1,
+      "default": 48
+    },
+    {
+      "type": "range",
+      "id": "title_width",
+      "label": "Title Width",
+      "min": 200,
+      "max": 600,
+      "unit": "px",
+      "step": 5,
+      "default": 560
+    },
+    {
+      "type": "textarea",
+      "id": "sub_title",
+      "label": "Sub Title",
+      "default": "Our investment platform automatically detects and secures any data that is sensitive to you"
+    },
+    {
+      "type": "range",
+      "id": "sub_title_font_size",
+      "label": "Sub Title Font Size",
+      "min": 10,
+      "max": 60,
+      "unit": "px",
+      "step": 1,
+      "default": 22
+    },
+    {
+      "type": "range",
+      "id": "sub_title_width",
+      "label": "Sub Title Width",
+      "min": 200,
+      "max": 600,
+      "unit": "px",
+      "step": 5,
+      "default": 495
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button Text"
+    },
+    {
+      "type": "url",
+      "id": "button_url",
+      "label": "Button URL"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Button Text Color",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Button Background Color",
+      "default": "#48B065"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "crypto_icon",
+      "name": "Crypto Icon",
+      "settings": [
+        {
+          "type": "select",
+          "label": "Icon",
+          "id": "icon",
+          "options": [
+            {
+              "value": "btc",
+              "label": "Bitcoin"
+            },
+            {
+              "value": "ether",
+              "label": "Etherium"
+            },
+            {
+              "value": "tether",
+              "label": "Tether"
+            },
+            {
+              "value": "sol",
+              "label": "Solana"
+            },
+            {
+              "value": "usdc",
+              "label": "USDC"
+            },
+            {
+              "value": "xrp",
+              "label": "Xrp"
+            },
+            {
+              "value": "avax",
+              "label": "Avax"
+            },
+            {
+              "value": "doge",
+              "label": "Doge"
+            },
+            {
+              "value": "terr-luna",
+              "label": "Terra Luna"
+            },
+            {
+              "value": "bnb",
+              "label": "BNB"
+            }
+          ],
+          "default": "btc"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Stock Section"
+    }
+  ]
+}
 {% endschema %}
