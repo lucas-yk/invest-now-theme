@@ -2,6 +2,81 @@
   "name": "t:sections.footer.name",
   "type": "footer",
   "sections": {
+    "custom_footer_GcyyEF": {
+      "type": "custom-footer",
+      "blocks": {
+        "logo_UYmzUt": {
+          "type": "logo",
+          "settings": {
+            "text": "Maximize your business and investment profits with expert guidance and innovative solutions."
+          }
+        },
+        "newsletter_form_gqhjFM": {
+          "type": "newsletter-form",
+          "settings": {
+            "form_title": "Subscribe Our Newsletter"
+          }
+        },
+        "link_list_U8DfMb": {
+          "type": "link_list",
+          "settings": {
+            "title": "Quick Links",
+            "link_list": "",
+            "width": 20
+          }
+        },
+        "link_list_NGBEdn": {
+          "type": "link_list",
+          "settings": {
+            "title": "Quick Links",
+            "link_list": "",
+            "width": 20
+          }
+        },
+        "link_list_3J83TU": {
+          "type": "link_list",
+          "settings": {
+            "title": "Quick Links",
+            "link_list": "",
+            "width": 20
+          }
+        },
+        "link_list_zjf9g7": {
+          "type": "link_list",
+          "settings": {
+            "title": "Quick Links",
+            "link_list": "",
+            "width": 20
+          }
+        },
+        "mobile_app_6GmRMp": {
+          "type": "mobile_app",
+          "settings": {
+            "title": "Download our App",
+            "app_link_url": "",
+            "app_link_url_2": "",
+            "width": 20,
+            "show_social_icons": true,
+            "facebook": "",
+            "twitter": "",
+            "linkedin": "",
+            "whatsapp": "",
+            "telegram": ""
+          }
+        }
+      },
+      "block_order": [
+        "logo_UYmzUt",
+        "newsletter_form_gqhjFM",
+        "link_list_U8DfMb",
+        "link_list_NGBEdn",
+        "link_list_3J83TU",
+        "link_list_zjf9g7",
+        "mobile_app_6GmRMp"
+      ],
+      "settings": {
+      }
+    },
     "footer": {
       "type": "footer",
       "blocks": {
@@ -50,6 +125,7 @@
     }
   },
   "order": [
+    "custom_footer_GcyyEF",
     "footer"
   ]
 }
