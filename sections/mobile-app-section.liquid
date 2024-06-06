@@ -1,0 +1,86 @@
+<div class="flex align-center">
+  {% if section.settings.bg_image != blank %}
+    {{
+      section.settings.bg_image
+      | image_url: width: '200'
+      | image_tag:
+        alt: section.settings.bg_image.alt,
+        class: 'mobile-app__bg-image',
+        height: null,
+        width: null,
+        loading: 'lazy'
+    }}
+  {% endif %}
+  <div class="moblile-app_container">
+    <h2 class="mobile-app__title">{{ section.settings.title }}</h2>
+    <span class="mobile-app__description">{{ section.settings.description }}</span>
+    <div class="flex gap-15">
+      {% for block in section.blocks %}
+        {% case block.type %}
+          {% when 'app_link' %}
+            <a href="{{ block.settings.app_link_url }}">
+              {% if block.settings.link_image != blank %}
+                {{
+                  block.settings.link_image
+                  | image_url: width: '200'
+                  | image_tag:
+                    alt: block.settings.link_image.alt,
+                    class: 'app-link__image',
+                    height: null,
+                    width: null,
+                    loading: 'lazy'
+                }}
+              {% endif %}
+            </a>
+        {% endcase %}
+      {% endfor %}
+    </div>
+  </div>
+</div>
+{% schema %}
+{
+  "name": "Mobile App Section",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "bg_image",
+      "label": "Background Image"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "Let’s start investment today with Download our App"
+    },
+    {
+      "type": "text",
+      "id": "description",
+      "label": "Description",
+      "default": "Lorem ipsum dolor sit amet  conset atetur adipiscing elit, sed do eiusmod tempor incididunt."
+    }
+  ],
+  "blocks": [
+    {
+      "type": "app_link",
+      "name": "App Link",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "link_image",
+          "label": "Image"
+        },
+        {
+          "type": "url",
+          "id": "app_link_url",
+          "label": "App Link Url"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Mobile App Section"
+    }
+  ]
+}
+{% endschema %}
