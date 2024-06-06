@@ -341,12 +341,6 @@
             "icon": "doge"
           }
         },
-        "crypto_icon_hGdPdr": {
-          "type": "crypto_icon",
-          "settings": {
-            "icon": "doge"
-          }
-        },
         "crypto_icon_dhGTtj": {
           "type": "crypto_icon",
           "settings": {
@@ -357,6 +351,36 @@
           "type": "crypto_icon",
           "settings": {
             "icon": "bnb"
+          }
+        },
+        "crypto_icon_8GAYEq": {
+          "type": "crypto_icon",
+          "settings": {
+            "icon": "btc"
+          }
+        },
+        "crypto_icon_CWMXM8": {
+          "type": "crypto_icon",
+          "settings": {
+            "icon": "ether"
+          }
+        },
+        "crypto_icon_cMaeEW": {
+          "type": "crypto_icon",
+          "settings": {
+            "icon": "tether"
+          }
+        },
+        "crypto_icon_EpUWbN": {
+          "type": "crypto_icon",
+          "settings": {
+            "icon": "sol"
+          }
+        },
+        "crypto_icon_c9eXcY": {
+          "type": "crypto_icon",
+          "settings": {
+            "icon": "avax"
           }
         }
       },
@@ -369,9 +393,13 @@
         "crypto_icon_AJWd3q",
         "crypto_icon_DRMVdW",
         "crypto_icon_wQ8UWp",
-        "crypto_icon_hGdPdr",
         "crypto_icon_dhGTtj",
-        "crypto_icon_jJHGFA"
+        "crypto_icon_jJHGFA",
+        "crypto_icon_8GAYEq",
+        "crypto_icon_CWMXM8",
+        "crypto_icon_cMaeEW",
+        "crypto_icon_EpUWbN",
+        "crypto_icon_c9eXcY"
       ],
       "settings": {
         "banner_image": "shopify:\/\/shop_images\/stock-bg.webp",
