@@ -425,7 +425,8 @@
     "about_section_yN7eBJ": {
       "type": "about-section",
       "settings": {
-        "title": "",
+        "banner_image": "shopify:\/\/shop_images\/about-banner.webp",
+        "title": "The <span class=\"highlight\">security teams<\/span> at our investment company guarantees that all your data is safe",
         "description": "Lorem ipsum dolor sit amet  conset atetur adipiscing elit, sed do eiusmod tempor incididunt."
       }
     },
