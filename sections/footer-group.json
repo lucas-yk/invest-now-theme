@@ -78,7 +78,9 @@
         "footer_logo_RFCVPT"
       ],
       "settings": {
-        "bg_image": "shopify:\/\/shop_images\/footer-bg.webp"
+        "bg_image": "shopify:\/\/shop_images\/footer-bg.webp",
+        "copyright": "InvestNow By Afif Ubaidillah.",
+        "footer_link": ""
       }
     },
     "footer": {
