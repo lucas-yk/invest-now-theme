@@ -1,0 +1,95 @@
+.benefit {
+  &__container {
+    width: calc(100% - 180px);
+    padding-top: 60px;
+  }
+
+  &__banner-image {
+    position: absolute;
+    width: calc(100% - 30px);
+    left: 15px;
+  }
+
+  &__title {
+    font-family: Instrument Sans;
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 55.2px;
+    letter-spacing: -0.03em;
+    text-align: center;
+    width: 600px;
+    z-index: 10;
+    margin-top: 0;
+  }
+
+  &__sub-title {
+    font-family: Instrument Sans;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 40px;
+    letter-spacing: -0.03em;
+    width: 620px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  &__btn {
+    font-family: Instrument Sans;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21.96px;
+    text-align: right;
+    box-shadow: 0px 0px 40px 0px #48B06566;
+    height: 56px;
+    border-radius: 100px;
+  }
+
+  &__card-wrapper {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    padding-bottom: 65px;
+  }
+
+  &__card {
+    position: relative;
+
+    .card-title {
+      font-family: Instrument Sans;
+      font-size: 24px;
+      font-weight: 500;
+      line-height: 26.4px;
+      letter-spacing: -0.03em;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
+    .card-description {
+      font-family: Instrument Sans;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      color: #ffffffb2;
+    }
+
+    .card-link {
+      font-family: Instrument Sans;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 19.52px;
+      color: white;
+      text-decoration: none;
+
+      svg {
+        transition: transform 0.3s;
+      }
+
+      &:hover {
+        svg {
+          transform: rotate(45deg);
+        }
+      }
+    }
+  }
+}

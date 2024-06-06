@@ -1,24 +1,43 @@
-<div class="section section-benefit">
-  <div class="container benefit__container">
-    <h2 class="benefit__title">{{ section.settings.title }}</h2>
+{% style %}
+{% endstyle %}
+
+<div class="flex flex-center" style="height: calc(100vw / {{ section.settings.bg_image.aspect_ratio }})">
+  {{
+    section.settings.bg_image
+    | image_url: width: '1600'
+    | image_tag:
+      alt: section.settings.bg_image.alt,
+      class: 'benefit__banner-image',
+      height: null,
+      width: null,
+      loading: 'lazy'
+  }}
+  <div class="benefit__container flex flex-col flex-center align-center">
+    <h2 class="benefit__title text-gradient">{{ section.settings.title }}</h2>
     <div class="benefit__card-wrapper">
       {% assign benefit_blocks = section.blocks | where: 'type', 'benefit_card' %}
       {% for benefit in benefit_blocks %}
-        <div class="beniefit__card flex flex-col align-center gap-25">
-          {% render 'benefit-card-icon', icon_type: benefit.settings.icon %}
-          <h5 class="card-title">{{ benefit.settings.card_title }}</h5>
-          <span class="card-description">{{ benefit.settings.card__description }}</span>
-          <a class="card-link" href="{{ benefit.settings.card_link_url }}">
-            {{- benefit.settings.card_link_text }}
-            <span>{% render 'icon-arrow-right', size: 10 %}</span></a
-          >
+        <div
+          class="benefit__card flex flex-col flex-center"
+        >
+          <img src="{{ 'card-bg.webp' | asset_url }}" class="card-image" style="width: 100%;">
+          <div class="flex flex-col flex-center gap-20" style="position: absolute; padding: 0 35px;">
+            {% render 'benefit-card-icon', icon_type: benefit.settings.icon %}
+            <h5 class="card-title text-gradient">{{ benefit.settings.card_title }}</h5>
+            <span class="card-description">{{ benefit.settings.card_description }}</span>
+            <a class="card-link flex align-center gap-5" href="{{ benefit.settings.card_link_url }}">
+              <span>{{- benefit.settings.card_link_text }}</span>
+              {% render 'icon-arrow-right-up', color: '#fff' %}
+            </a>
+          </div>
         </div>
       {% endfor %}
     </div>
-    <div class="flex flex-between">
-      <h4 class="benefit__sub-title">{{ section.settings.sub_title }}</h4>
+    <div class="h-splitter" style="z-index: 10;"></div>
+    <div class="flex align-center flex-between w-full" style="padding-top: 60px; z-index: 10">
+      <h4 class="benefit__sub-title text-gradient">{{ section.settings.sub_title }}</h4>
       <a
-        class="btn btn--primary btn--lg"
+        class="benefit__btn btn btn--primary btn--lg"
         href="{{ section.settings.button_url }}"
         style="color: {{ section.settings.text_color}}; display: inline-block;"
       >

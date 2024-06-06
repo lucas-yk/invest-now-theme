@@ -1,0 +1,14 @@
+{% case icon_type %}
+  {% when 'solar-chart' %}
+    {% render 'icon-solar-chart' %}
+  {% when 'guard' %}
+    {% render 'icon-guard' %}
+  {% when 'income' %}
+    {% render 'icon-income' %}
+  {% when 'wallet' %}
+    {% render 'icon-wallet' %}
+  {% when 'tax' %}
+    {% render 'icon-tax' %}
+  {% when 'group' %}
+    {% render 'icon-group' %}
+{% endcase %}
