@@ -1,0 +1,122 @@
+<div class="section section-stocks"></div>
+{% schema %}
+{
+  "name": "Stock Section",
+  "class": "section section-stock",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "banner_image",
+      "label": "Banner Image"
+    },
+    {
+      "type": "textarea",
+      "id": "title",
+      "label": "Title",
+      "default": "We provide many types of stock for you to invest"
+    },
+    {
+      "type": "range",
+      "id": "title_font_size",
+      "label": "Title Font Size",
+      "min": 10,
+      "max": 60,
+      "unit": "px",
+      "step": 1,
+      "default": 48
+    },
+    {
+      "type": "range",
+      "id": "title_width",
+      "label": "Title Width",
+      "min": 200,
+      "max": 600,
+      "unit": "px",
+      "step": 5,
+      "default": 560
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button Text"
+    },
+    {
+      "type": "url",
+      "id": "button_url",
+      "label": "Button URL"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Button Text Color",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Button Background Color",
+      "default": "#48B065"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "crypto_icon",
+      "name": "Crypto Icon",
+      "settings": [
+        {
+          "type": "select",
+          "label": "Icon",
+          "id": "icon",
+          "options": [
+            {
+              "value": "btc",
+              "label": "Bitcoin"
+            },
+            {
+              "value": "ether",
+              "label": "Etherium"
+            },
+            {
+              "value": "tether",
+              "label": "Tether"
+            },
+            {
+              "value": "sol",
+              "label": "Solana"
+            },
+            {
+              "value": "usdc",
+              "label": "USDC"
+            },
+            {
+              "value": "xrp",
+              "label": "Xrp"
+            },
+            {
+              "value": "sol",
+              "label": "Solana"
+            },
+            {
+              "value": "avax",
+              "label": "Avax"
+            },
+            {
+              "value": "doge",
+              "label": "Doge"
+            },
+            {
+              "value": "terr-luna",
+              "label": "Terra Luna"
+            },
+            {
+              "value": "bnb",
+              "label": "BNB"
+            }
+          ],
+          "default": "btc"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
