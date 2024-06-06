@@ -478,6 +478,88 @@
         "description": "Lorem ipsum dolor sit amet  conset atetur adipiscing elit, sed do eiusmod tempor incididunt."
       }
     },
+    "benefit_section_LndChp": {
+      "type": "benefit-section",
+      "blocks": {
+        "benefit_card_rbULKT": {
+          "type": "benefit_card",
+          "settings": {
+            "icon": "solar-chart",
+            "card_title": "",
+            "card_description": "",
+            "card_link_text": "Request For More",
+            "card_link_url": ""
+          }
+        },
+        "benefit_card_AWA8aC": {
+          "type": "benefit_card",
+          "settings": {
+            "icon": "solar-chart",
+            "card_title": "",
+            "card_description": "",
+            "card_link_text": "Request For More",
+            "card_link_url": ""
+          }
+        },
+        "benefit_card_qayfJX": {
+          "type": "benefit_card",
+          "settings": {
+            "icon": "solar-chart",
+            "card_title": "",
+            "card_description": "",
+            "card_link_text": "Request For More",
+            "card_link_url": ""
+          }
+        },
+        "benefit_card_WMk3Tp": {
+          "type": "benefit_card",
+          "settings": {
+            "icon": "solar-chart",
+            "card_title": "",
+            "card_description": "",
+            "card_link_text": "Request For More",
+            "card_link_url": ""
+          }
+        },
+        "benefit_card_YzVVcF": {
+          "type": "benefit_card",
+          "settings": {
+            "icon": "solar-chart",
+            "card_title": "",
+            "card_description": "",
+            "card_link_text": "Request For More",
+            "card_link_url": ""
+          }
+        },
+        "benefit_card_VHWfJ7": {
+          "type": "benefit_card",
+          "settings": {
+            "icon": "solar-chart",
+            "card_title": "",
+            "card_description": "",
+            "card_link_text": "Request For More",
+            "card_link_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "benefit_card_rbULKT",
+        "benefit_card_AWA8aC",
+        "benefit_card_qayfJX",
+        "benefit_card_WMk3Tp",
+        "benefit_card_YzVVcF",
+        "benefit_card_VHWfJ7"
+      ],
+      "settings": {
+        "bg_image": "shopify:\/\/shop_images\/benefits-bg.webp",
+        "title": "All the benefits you get if you invest with InvestNow",
+        "sub_title": "We are very open and very happy if you give us feedback on us. Need more benefits?",
+        "button_text": "Request For More",
+        "button_url": "shopify:\/\/collections",
+        "text_color": "#FFFFFF",
+        "bg_color": "#48B065"
+      }
+    },
     "image_banner": {
       "type": "image-banner",
       "blocks": {
@@ -696,6 +778,7 @@
     "feature_section_HmV3PJ",
     "stocks_section_9YrfQy",
     "about_section_yN7eBJ",
+    "benefit_section_LndChp",
     "image_banner",
     "rich_text",
     "featured_collection",
