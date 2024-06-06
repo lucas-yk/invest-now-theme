@@ -485,60 +485,60 @@
           "type": "benefit_card",
           "settings": {
             "icon": "solar-chart",
-            "card_title": "",
-            "card_description": "",
-            "card_link_text": "Request For More",
-            "card_link_url": ""
+            "card_title": "Wealth Accumulation",
+            "card_description": "Investing allows you to grow your wealth over time, creating opportunities for financial growth and stability.",
+            "card_link_text": "Learn More",
+            "card_link_url": "shopify:\/\/collections"
           }
         },
         "benefit_card_AWA8aC": {
           "type": "benefit_card",
           "settings": {
-            "icon": "solar-chart",
-            "card_title": "",
-            "card_description": "",
-            "card_link_text": "Request For More",
-            "card_link_url": ""
+            "icon": "guard",
+            "card_title": "Financial Security",
+            "card_description": "A well-diversified investment portfolio provides a safety net, offering greater financial security during uncertain times.",
+            "card_link_text": "Learn More",
+            "card_link_url": "shopify:\/\/collections\/frontpage"
           }
         },
         "benefit_card_qayfJX": {
           "type": "benefit_card",
           "settings": {
-            "icon": "solar-chart",
-            "card_title": "",
-            "card_description": "",
-            "card_link_text": "Request For More",
-            "card_link_url": ""
+            "icon": "income",
+            "card_title": "Passive Income",
+            "card_description": "Investments such as dividends, rental properties, or interest-bearing accounts generate passive income.",
+            "card_link_text": "Learn More",
+            "card_link_url": "shopify:\/\/collections"
           }
         },
         "benefit_card_WMk3Tp": {
           "type": "benefit_card",
           "settings": {
-            "icon": "solar-chart",
-            "card_title": "",
-            "card_description": "",
-            "card_link_text": "Request For More",
-            "card_link_url": ""
+            "icon": "wallet",
+            "card_title": "Inflation Hedge",
+            "card_description": "Investments can help protect against inflation, as they often appreciate in value over time.",
+            "card_link_text": "Learn More",
+            "card_link_url": "shopify:\/\/collections"
           }
         },
         "benefit_card_YzVVcF": {
           "type": "benefit_card",
           "settings": {
-            "icon": "solar-chart",
-            "card_title": "",
-            "card_description": "",
-            "card_link_text": "Request For More",
-            "card_link_url": ""
+            "icon": "tax",
+            "card_title": "Tax Benefits",
+            "card_description": "Certain investment accounts, like 401(k)s and IRAs, offer tax advantages, such as tax-deferred growth.",
+            "card_link_text": "Learn More",
+            "card_link_url": "shopify:\/\/collections"
           }
         },
         "benefit_card_VHWfJ7": {
           "type": "benefit_card",
           "settings": {
             "icon": "solar-chart",
-            "card_title": "",
-            "card_description": "",
-            "card_link_text": "Request For More",
-            "card_link_url": ""
+            "card_title": "Building a Legacy",
+            "card_description": "Investments can contribute to building a financial legacy, allowing you to leave assets for future generations.",
+            "card_link_text": "Learn More",
+            "card_link_url": "shopify:\/\/collections"
           }
         }
       },
