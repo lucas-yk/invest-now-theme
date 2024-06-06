@@ -424,6 +424,54 @@
     },
     "about_section_yN7eBJ": {
       "type": "about-section",
+      "blocks": {
+        "feature_GE698c": {
+          "type": "feature",
+          "settings": {
+            "feature_description": "Smart, extensive and scalable investment system"
+          }
+        },
+        "feature_wq6iBz": {
+          "type": "feature",
+          "settings": {
+            "feature_description": "A highly intelligent robot has been prepared"
+          }
+        },
+        "feature_DNFDaB": {
+          "type": "feature",
+          "settings": {
+            "feature_description": "Hundreds of practical and useful investment examples"
+          }
+        },
+        "feature_XURxj9": {
+          "type": "feature",
+          "settings": {
+            "feature_description": "Dashboards settings pages and more"
+          }
+        },
+        "badge_PVirbG": {
+          "type": "badge",
+          "settings": {
+            "rating": "95%",
+            "description": "Happy Users"
+          }
+        },
+        "badge_kqaJiM": {
+          "type": "badge",
+          "settings": {
+            "rating": "99%",
+            "description": "People Trust"
+          }
+        }
+      },
+      "block_order": [
+        "feature_GE698c",
+        "feature_wq6iBz",
+        "feature_DNFDaB",
+        "feature_XURxj9",
+        "badge_PVirbG",
+        "badge_kqaJiM"
+      ],
       "settings": {
         "banner_image": "shopify:\/\/shop_images\/about-banner.webp",
         "title": "The <span class=\"highlight\">security teams<\/span> at our investment company guarantees that all your data is safe",
