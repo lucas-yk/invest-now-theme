@@ -358,6 +358,36 @@
           "settings": {
             "icon": "btc"
           }
+        },
+        "crypto_icon_iJwQce": {
+          "type": "crypto_icon",
+          "settings": {
+            "icon": "btc"
+          }
+        },
+        "crypto_icon_LtRnz3": {
+          "type": "crypto_icon",
+          "settings": {
+            "icon": "btc"
+          }
+        },
+        "crypto_icon_gHyNDP": {
+          "type": "crypto_icon",
+          "settings": {
+            "icon": "btc"
+          }
+        },
+        "crypto_icon_8QJb8E": {
+          "type": "crypto_icon",
+          "settings": {
+            "icon": "btc"
+          }
+        },
+        "crypto_icon_anCih6": {
+          "type": "crypto_icon",
+          "settings": {
+            "icon": "btc"
+          }
         }
       },
       "block_order": [
@@ -371,7 +401,12 @@
         "crypto_icon_hGdPdr",
         "crypto_icon_dhGTtj",
         "crypto_icon_jJHGFA",
-        "crypto_icon_VPmPCm"
+        "crypto_icon_VPmPCm",
+        "crypto_icon_iJwQce",
+        "crypto_icon_LtRnz3",
+        "crypto_icon_gHyNDP",
+        "crypto_icon_8QJb8E",
+        "crypto_icon_anCih6"
       ],
       "settings": {
         "banner_image": "shopify:\/\/shop_images\/stock-bg.webp",
