@@ -78,6 +78,7 @@
         "footer_logo_RFCVPT"
       ],
       "settings": {
+        "bg_image": "shopify:\/\/shop_images\/footer-bg.webp"
       }
     },
     "footer": {
