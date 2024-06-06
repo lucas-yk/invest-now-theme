@@ -2320,4 +2320,35 @@
   transform: rotate(45deg);
 }
 
+.mobile-app__bg-image {
+  position: absolute;
+  width: calc(100% - 30px);
+  left: 15px;
+  top: 0;
+}
+.mobile-app-container {
+  width: 1220px;
+  left: calc((100vw - 1220px) / 2);
+  position: absolute;
+  z-index: 10;
+}
+.mobile-app__title {
+  width: 590px;
+  font-family: Instrument Sans;
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 57.6px;
+  letter-spacing: -0.03em;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.mobile-app__description {
+  width: 500px;
+  font-family: Instrument Sans;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  color: rgba(255, 255, 255, 0.6980392157);
+}
+
 /*# sourceMappingURL=custom.css.map */

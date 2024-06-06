@@ -1,8 +1,11 @@
-<div class="flex align-center">
+<div
+  class="flex align-center"
+  style="position: relative; height: calc(100vw / {{ section.settings.bg_image.aspect_ratio }});"
+>
   {% if section.settings.bg_image != blank %}
     {{
       section.settings.bg_image
-      | image_url: width: '200'
+      | image_url: width: '1500'
       | image_tag:
         alt: section.settings.bg_image.alt,
         class: 'mobile-app__bg-image',
@@ -11,8 +14,11 @@
         loading: 'lazy'
     }}
   {% endif %}
-  <div class="moblile-app_container">
-    <h2 class="mobile-app__title">{{ section.settings.title }}</h2>
+  <div
+    class="mobile-app-container flex flex-col flex-center gap-30"
+    style="height: calc((100vw - 30px) / {{ section.settings.bg_image.aspect_ratio }});"
+  >
+    <h2 class="mobile-app__title text-gradient">{{ section.settings.title }}</h2>
     <span class="mobile-app__description">{{ section.settings.description }}</span>
     <div class="flex gap-15">
       {% for block in section.blocks %}
