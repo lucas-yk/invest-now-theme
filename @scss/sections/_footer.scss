@@ -166,8 +166,29 @@
 
   .mobile-app__link {
     img {
-        width: 110px;
-        height: 35px;
+      width: 110px;
+      height: 35px;
+    }
+  }
+
+  &__addition {
+    padding-top: 60px;
+
+    .copyright {
+      font-family: Instrument Sans;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 21px;
+      color: #fff;
+    }
+
+    a {
+      font-family: Instrument Sans;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 21px;
+      text-align: left;
+      color: #ffffffb2;
     }
   }
 }
