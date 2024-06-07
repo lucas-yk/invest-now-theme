@@ -1,0 +1,55 @@
+<header class="flex">
+  {{
+    section.settings.logo
+    | image_url: width: '200'
+    | image_tag: alt: section.settings.logo.alt, class: 'footer__bg-image', height: null, width: null, loading: 'lazy'
+  }}
+  <div class="header__menu">
+    {% for link in section.settings.menu.links %}
+      {% if link.links == [] %}
+        <li class="header__menu-item {% if page.url == link.url %}header__menu-item--active{% endif %}">
+          {{ link.title | link_to: link.url }}
+        </li>
+      {% else %}
+        <li class="header__menu-item header__menu-dropdown">
+          <span>{{ link.title }}</span>
+          <ul class="dropdown-content">
+            {% for sub_link in link.links %}
+              <li>{{ sub_link.title | link_to: sub_link.url }}</li>
+            {% endfor %}
+          </ul>
+        </li>
+      {% endif %}
+    {% endfor %}
+  </div>
+  <div class="flex">
+    {{ 'Sign In' | link_to: '/signin' }}
+    <a
+      class="download__btn btn btn--primary btn--lg"
+    >
+      Download App
+    </a>
+  </div>
+</header>
+{% schema %}
+{
+  "name": "Custom Header",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "logo",
+      "label": "Logo"
+    },
+    {
+      "type": "link_list",
+      "id": "menu",
+      "label": "Menu"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Custom Header"
+    }
+  ]
+}
+{% endschema %}
