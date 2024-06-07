@@ -1,6 +1,6 @@
 <div
   class="flex align-center"
-  style="position: relative; height: calc(100vw / {{ section.settings.bg_image.aspect_ratio }});"
+  style="position: relative; height: max(505px, calc(100vw / {{ section.settings.bg_image.aspect_ratio }}));"
 >
   {% if section.settings.bg_image != blank %}
     {{

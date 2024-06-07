@@ -2357,4 +2357,90 @@
   height: 100%;
 }
 
+.faq-section__title {
+  font-family: Instrument Sans;
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 55.2px;
+  letter-spacing: -0.03em;
+  text-align: left;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.faq-section__description {
+  font-family: Instrument Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: rgba(7, 30, 18, 0.5019607843);
+}
+.faq-section__description a {
+  color: #071e12;
+  font-weight: 500;
+}
+.faq-section__btn {
+  padding: 14px 25px;
+  font-family: Instrument Sans;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19.52px;
+  text-align: center;
+}
+.faq-wrapper {
+  margin-top: 55px;
+}
+.faq-wrapper .faq-accordion details summary {
+  font-family: Instrument Sans;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24.4px;
+  text-align: left;
+  color: #071e12;
+  padding: 25px;
+  margin: 0 15px;
+  border-bottom: 1px solid rgba(7, 30, 18, 0.1490196078);
+  display: flex;
+  justify-content: space-between;
+}
+.faq-wrapper .faq-accordion details summary svg {
+  fill: #48b065;
+}
+.faq-wrapper .faq-accordion details p {
+  font-family: Instrument Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: rgba(7, 30, 18, 0.5019607843);
+}
+.faq-wrapper .faq-accordion details[open] {
+  background: #edf7f0;
+  border-radius: 15px;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+.faq-wrapper .faq-accordion details[open] svg {
+  fill: #c8c8c8;
+  transform: rotate(45deg);
+}
+.faq-wrapper .faq-accordion details[open] summary {
+  border-bottom: none;
+  margin-left: 0;
+  margin-right: 0;
+  background: #fff;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+.faq-wrapper .faq-accordion details[open] p {
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 30px;
+  margin-top: 0;
+  margin-bottom: 0;
+  background: #fff;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
 /*# sourceMappingURL=custom.css.map */

@@ -1,12 +1,12 @@
 <div class="container">
   <div class="flex flex-between align-center">
-    <div class="flex flex-col">
-      <h2 class="faq-section__title">{{ section.settings.title }}</h2>
+    <div class="flex flex-col gap-10">
+      <h2 class="faq-section__title text-gradient--2">{{ section.settings.title }}</h2>
       <span class="faq-section__description">{{ section.settings.description }}</span>
     </div>
     {%- if section.settings.button_text != blank -%}
       <a
-        class="btn btn--primary btn--lg absolute"
+        class="faq-section__btn btn btn--primary btn--lg"
         href="{{ section.settings.button_url }}"
         style="color: {{ section.settings.text_color}}; border-radius: 100px"
       >
@@ -14,15 +14,21 @@
       </a>
     {%- endif -%}
   </div>
-  <div class="faq-wrapper flex">
+  <div class="faq-wrapper flex gap-40">
     <div class="w-1/2">
-      <div class="accordion">
+      <div class="faq-accordion">
         {% assign blocks = section.blocks %}
         {% for block in blocks %}
-          {% assign index_mod = forloop.index | divided_by: 2 %}
-          {% if index_mod == 1 %}
+          {% assign index_mod1 = forloop.index0 | modulo: 2 %}
+          {% if index_mod1 == 0 %}
             <details>
-              <summary>{{ block.settings.faq_question }}</summary>
+              <summary>
+                {{ block.settings.faq_question }}
+                <svg width="17" height="15" viewBox="0 0 17 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0.953972 8.23565L0.953972 6.94335C0.953972 6.82848 1.01176 6.77104 1.12734 6.77104L16.3836 6.77104C16.4992 6.77104 16.557 6.82847 16.557 6.94335L16.557 8.23565C16.557 8.35052 16.4992 8.40796 16.3836 8.40796L1.12734 8.40796C1.01176 8.40796 0.953972 8.35052 0.953972 8.23565Z" fill=""/>
+                  <path d="M7.93262 14.8277L7.93262 0.353877C7.93262 0.239006 7.99042 0.18157 8.106 0.18157L9.40633 0.18157C9.52191 0.18157 9.5797 0.239006 9.5797 0.353877L9.5797 14.8277C9.5797 14.9426 9.52191 15 9.40633 15L8.106 15C7.99042 15 7.93262 14.9426 7.93262 14.8277Z" fill=""/>
+                </svg>
+              </summary>
               <p>{{ block.settings.faq_answer }}</p>
             </details>
           {% endif %}
@@ -30,13 +36,20 @@
       </div>
     </div>
     <div class="w-1/2">
-      <div class="accordion">
+      <div class="faq-accordion">
         {% assign blocks = section.blocks %}
         {% for block in blocks %}
-          {% assign index_mod = forloop.index | divided_by: 2 %}
-          {% if index_mod == 0 %}
+          {% assign index_mod2 = forloop.index0 | modulo: 2 %}
+          {% if index_mod2 != 0 %}
             <details>
-              <summary>{{ block.settings.faq_question }}</summary>
+              <summary>
+                {{ block.settings.faq_question }}
+                <svg width="17" height="15" viewBox="0 0 17 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0.953972 8.23565L0.953972 6.94335C0.953972 6.82848 1.01176 6.77104 1.12734 6.77104L16.3836 6.77104C16.4992 6.77104 16.557 6.82847 16.557 6.94335L16.557 8.23565C16.557 8.35052 16.4992 8.40796 16.3836 8.40796L1.12734 8.40796C1.01176 8.40796 0.953972 8.35052 0.953972 8.23565Z" fill=""/>
+                  <path d="M7.93262 14.8277L7.93262 0.353877C7.93262 0.239006 7.99042 0.18157 8.106 0.18157L9.40633 0.18157C9.52191 0.18157 9.5797 0.239006 9.5797 0.353877L9.5797 14.8277C9.5797 14.9426 9.52191 15 9.40633 15L8.106 15C7.99042 15 7.93262 14.9426 7.93262 14.8277Z" fill=""/>
+                </svg>
+              </summary>
+              <p>{{ block.settings.faq_answer }}</p>
             </details>
           {% endif %}
         {% endfor %}
