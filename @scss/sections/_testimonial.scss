@@ -1,0 +1,108 @@
+.testimonial {
+  &__title {
+    font-family: Instrument Sans;
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 55.2px;
+    letter-spacing: -0.03em;
+    text-align: center;
+    width: 770px;
+  }
+
+  &__wrapper {
+    width: 100%;
+    overflow-x: hidden;
+    position: relative;
+
+    &::before {
+        content: " ";
+        width: 180px;
+        height: 100%;
+        background: linear-gradient(270deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%);
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 10;
+    }
+
+    &::after {
+        content: " ";
+        width: 180px;
+        height: 100%;
+        background: linear-gradient(-270deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%);
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 10;
+    }
+    & + .btn {
+      border-radius: 100px;
+      padding: 14px 25px;
+      font-family: Instrument Sans;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 19.52px;
+      text-align: center;
+    }
+  }
+
+  &__row {
+    --testimonial-card-width: calc((100vw - 60px) / 3);
+
+    .testimonial__card {
+      min-width: var(--testimonial-card-width);
+      max-width: var(--testimonial-card-width);
+      background: #f2f9f5;
+      border: 1px solid #071e1226;
+      border-radius: 15px;
+      padding: 35px;
+
+      &__feedback {
+        font-family: Instrument Sans;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 27px;
+        text-align: left;
+        color: #071e1299;
+      }
+
+      &__avatar {
+        width: 48px;
+        height: 48px;
+      }
+
+      &__username {
+        font-family: Instrument Sans;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 22px;
+        text-align: left;
+        color: #202226;
+      }
+
+      &__role {
+        font-family: Instrument Sans;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 22px;
+        text-align: left;
+        color: #838383;
+      }
+    }
+
+    &:nth-child(odd) {
+      left: calc(var(--testimonial-card-width) / 2 * -1);
+      position: relative;
+    }
+
+    &:last-child::after {
+        content: " ";
+        width: 100%;
+        height: 285px;
+        position: absolute;
+        bottom: 0;
+        left: 350px;
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0) -20.39%, #FFFFFF 100%);
+    }
+  }
+}

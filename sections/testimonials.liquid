@@ -1,7 +1,7 @@
-<div class="flex flex-col gap-30">
+<div class="flex flex-col align-center gap-30" style="margin-bottom: 120px;">
   <h2 class="testimonial__title text-gradient--2">{{ section.settings.title }}</h2>
-  <div class="flex flex-col gap-30">
-    <div class="testimomnial__row flex gap-30">
+  <div class="testimonial__wrapper flex flex-col gap-30">
+    <div class="testimonial__row flex gap-30">
       {% assign first_group = section.blocks | slice: 0, 4 %}
       {% for block in first_group %}
         {% render 'testimonial-card',
