@@ -1,22 +1,33 @@
 <div class="footer">
+  {% if section.settings.bg_image != blank %}
+    {{
+      section.settings.bg_image
+      | image_url: width: '1500'
+      | image_tag:
+        alt: section.settings.bg_image.alt,
+        class: 'footer__logo-image',
+        height: null,
+        width: null,
+        loading: 'lazy'
+    }}
+  {% endif %}
   <div class="container">
     <div class="flex flex-between">
       <div class="flex flex-col logo__wrapper">
         {% assign logo = section.blocks | where: 'type', 'footer_logo' %}
-        {{ logo.settings | json }}
-        {% if logo.settings.logo_image != blank %}
+        {% if logo[0].settings.logo_image != blank %}
           {{
-            logo.settings.logo_image
+            logo[0].settings.logo_image
             | image_url: width: '400'
             | image_tag:
-              alt: logo.settings.logo_image.alt,
-              class: 'app-link__image',
+              alt: logo[0].settings.logo_image.alt,
+              class: 'footer__logo-image',
               height: null,
               width: null,
               loading: 'lazy'
           }}
         {% endif %}
-        <span class="logo__text">{{ logo.settings.text }}</span>
+        <span class="logo__text">{{ logo[0].settings.text }}</span>
       </div>
       <div class="flex flex-col gap-20 newsletter__wrapper">
         {% assign newsletter_block = section.blocks | where: 'type', 'newsletter-form' %}
@@ -99,7 +110,13 @@
 {% schema %}
 {
   "name": "Custom Footer",
-  "settings": [],
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "bg_image",
+      "label": "Background Image"
+    }
+  ],
   "blocks": [
     {
       "type": "footer_logo",
