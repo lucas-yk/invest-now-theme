@@ -1,19 +1,24 @@
-<header class="flex">
+<header class="flex flex-between header">
   {{
     section.settings.logo
     | image_url: width: '200'
-    | image_tag: alt: section.settings.logo.alt, class: 'footer__bg-image', height: null, width: null, loading: 'lazy'
+    | image_tag: alt: section.settings.logo.alt, class: 'header__logo-image', height: null, width: null, loading: 'lazy'
   }}
-  <div class="header__menu">
+  <div class="header__menu flex align-center flex-center gap-30">
     {% for link in section.settings.menu.links %}
       {% if link.links.size == 0 %}
-        <li class="header__menu-item {% if page.url == link.url %}header__menu-item--active{% endif %}">
+        <li class="header__menu-item {% if request.path == link.url %}header__menu-item--active{% endif %}">
           {{ link.title | link_to: link.url }}
         </li>
       {% else %}
         <li class="header__menu-item header__menu-dropdown">
-          <span>{{ link.title }}</span>
-          <ul class="dropdown-content">
+          <span>
+            {{- link.title }}
+            <svg width="11" height="7" viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M10 1.5L5.5 5.5L1 1.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+          <ul class="dropdown-content flex flex-col gap-12">
             {% for sub_link in link.links %}
               <li>{{ sub_link.title | link_to: sub_link.url }}</li>
             {% endfor %}
@@ -22,7 +27,7 @@
       {% endif %}
     {% endfor %}
   </div>
-  <div class="flex">
+  <div class="flex align-center header__menu-item gap-20">
     {{ 'Sign In' | link_to: '/signin' }}
     <a
       class="download__btn btn btn--primary btn--lg"
