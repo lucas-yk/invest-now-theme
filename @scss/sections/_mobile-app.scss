@@ -33,4 +33,12 @@
     color: #FFFFFFB2;
 
   }
+
+  &__link {
+    max-height: 50px;
+
+    img {
+        height: 100%;
+    }
+  }
 }

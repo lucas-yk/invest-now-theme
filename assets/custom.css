@@ -2350,5 +2350,11 @@
   line-height: 27px;
   color: rgba(255, 255, 255, 0.6980392157);
 }
+.mobile-app__link {
+  max-height: 50px;
+}
+.mobile-app__link img {
+  height: 100%;
+}
 
 /*# sourceMappingURL=custom.css.map */

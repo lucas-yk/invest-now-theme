@@ -1,0 +1,112 @@
+<div class="container">
+  <div class="flex flex-between align-center">
+    <div class="flex flex-col">
+      <h2 class="faq-section__title">{{ section.settings.title }}</h2>
+      <span class="faq-section__description">{{ section.settings.description }}</span>
+    </div>
+    {%- if section.settings.button_text != blank -%}
+      <a
+        class="btn btn--primary btn--lg absolute"
+        href="{{ section.settings.button_url }}"
+        style="color: {{ section.settings.text_color}}; border-radius: 100px"
+      >
+        {{- section.settings.button_text -}}
+      </a>
+    {%- endif -%}
+  </div>
+  <div class="faq-wrapper flex">
+    <div class="w-1/2">
+      <div class="accordion">
+        {% assign blocks = section.blocks %}
+        {% for block in blocks %}
+          {% assign index_mod = forloop.index | divided_by: 2 %}
+          {% if index_mod == 1 %}
+            <details>
+              <summary>{{ block.settings.faq_question }}</summary>
+              <p>{{ block.settings.faq_answer }}</p>
+            </details>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+    <div class="w-1/2">
+      <div class="accordion">
+        {% assign blocks = section.blocks %}
+        {% for block in blocks %}
+          {% assign index_mod = forloop.index | divided_by: 2 %}
+          {% if index_mod == 0 %}
+            <details>
+              <summary>{{ block.settings.faq_question }}</summary>
+            </details>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+{% schema %}
+{
+  "name": "FAQ Section",
+  "class": "section section-faq",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "Everything you need to know"
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Description"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button Text"
+    },
+    {
+      "type": "url",
+      "id": "button_url",
+      "label": "Button URL"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Button Text Color",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Button Background Color",
+      "default": "#48B065"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "faq",
+      "name": "FAQ",
+      "settings": [
+        {
+          "type": "text",
+          "id": "faq_question",
+          "label": "Question",
+          "default": "What is InvestNow?"
+        },
+        {
+          "type": "textarea",
+          "id": "faq_answer",
+          "label": "Answer",
+          "default": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute irure dolor in reprehenderit. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus."
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "FAQ Section"
+    }
+  ]
+}
+{% endschema %}
