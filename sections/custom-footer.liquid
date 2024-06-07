@@ -2,20 +2,21 @@
   <div class="container">
     <div class="flex flex-between">
       <div class="flex flex-col logo__wrapper">
-        {% assign logo_block = section.blocks | where: 'type', 'logo' %}
-        {% if logo_block.settings.logo_image != blank %}
+        {% assign logo = section.blocks | where: 'type', 'footer_logo' %}
+        {{ logo.settings | json }}
+        {% if logo.settings.logo_image != blank %}
           {{
-            logo_block.settings.logo_image
+            logo.settings.logo_image
             | image_url: width: '400'
             | image_tag:
-              alt: logo_block.settings.logo_image.alt,
+              alt: logo.settings.logo_image.alt,
               class: 'app-link__image',
               height: null,
               width: null,
               loading: 'lazy'
           }}
         {% endif %}
-        <span class="logo__text">{{ logo_block.settings.text }}</span>
+        <span class="logo__text">{{ logo.settings.text }}</span>
       </div>
       <div class="flex flex-col gap-20 newsletter__wrapper">
         {% assign newsletter_block = section.blocks | where: 'type', 'newsletter-form' %}
@@ -101,7 +102,7 @@
   "settings": [],
   "blocks": [
     {
-      "type": "logo",
+      "type": "footer_logo",
       "name": "Footer Logo",
       "limit": 1,
       "settings": [
