@@ -1,7 +1,10 @@
 {% style %}
+  .benefit__banner-image {
+    height: max(calc(100vw / {{section.settings.bg_image.aspect_ratio}}), 1235px);
+  }
 {% endstyle %}
 
-<div class="flex flex-center" style="height: calc(100vw / {{ section.settings.bg_image.aspect_ratio }})">
+<div class="flex flex-center" style="height: max(calc(100vw / {{ section.settings.bg_image.aspect_ratio }}), 1235px)">
   {{
     section.settings.bg_image
     | image_url: width: '1600'
