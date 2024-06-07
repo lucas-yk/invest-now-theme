@@ -3,22 +3,24 @@
     <div class="flex flex-between">
       <div class="flex flex-col logo__wrapper">
         {% assign logo_block = section.blocks | where: 'type', 'logo' %}
-        {{
-          logo_block.settings.logo_image
-          | image_url: width: '400'
-          | image_tag:
-            alt: logo_block.settings.logo_image.alt,
-            class: 'app-link__image',
-            height: null,
-            width: null,
-            loading: 'lazy'
-        }}
+        {% if logo_block.settings.logo_image != blank %}
+          {{
+            logo_block.settings.logo_image
+            | image_url: width: '400'
+            | image_tag:
+              alt: logo_block.settings.logo_image.alt,
+              class: 'app-link__image',
+              height: null,
+              width: null,
+              loading: 'lazy'
+          }}
+        {% endif %}
         <span class="logo__text">{{ logo_block.settings.text }}</span>
       </div>
       <div class="flex flex-col gap-20 newsletter__wrapper">
         {% assign newsletter_block = section.blocks | where: 'type', 'newsletter-form' %}
         <span class="newsletter__form-title">{{ newsletter_block.form_title }}</span>
-        {% form 'newsletter-form' %}
+        {% form 'contact' %}
           <div class="newsletter-form__wrapper">
             <input class="newsletter-form__input" placeholder="Your Email">
             <button
